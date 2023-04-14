@@ -16,6 +16,9 @@ from pathlib import Path
 import environ
 
 PROJECT = __name__.split(".")[0]
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 #######################################################################################
 # SECTION 0: Application definition, settings that should not vary between environments
@@ -25,6 +28,12 @@ ROOT_URLCONF = f"{PROJECT}.urls"
 
 INSTALLED_APPS = [
     # Add your custom apps here:
+    "genericsite",
+    # 3rd party apps used by GenericSite
+    "django_bootstrap_icons",
+    "easy_thumbnails",
+    "taggit",
+    "tinymce",
     # Third party apps:
     "django_extensions",
     # Core Django apps below custom so we can override their templates
@@ -34,6 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "django.contrib.redirects",
     "django.contrib.sites",
     "django.contrib.staticfiles",
 ]
@@ -51,12 +61,13 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     # Set request.site by checking for a Site where domain is the host header
     "django.contrib.sites.middleware.CurrentSiteMiddleware",
+    "django.contrib.redirects.middleware.RedirectFallbackMiddleware",
 ]
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -66,6 +77,7 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 "django.template.context_processors.media",
                 "django.template.context_processors.static",
+                "genericsite.apps.context_defaults",
             ],
         },
     },
@@ -86,9 +98,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 #######################################################################################
 # SECTION 1: Settings that can (and maybe should) differ between environments
 #######################################################################################
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Get environment settings
 env = environ.Env()
@@ -115,6 +124,7 @@ DATA_DIR = Path(env("DATA_DIR", default=BASE_DIR.joinpath("var")))
 STATIC_URL = "/static/"
 STATIC_ROOT = DATA_DIR / "static"
 STATIC_ROOT.mkdir(parents=True, exist_ok=True)
+STATICFILES_DIRS = [BASE_DIR / "static"]
 MEDIA_URL = "/media/"
 MEDIA_ROOT = DATA_DIR / "media"
 MEDIA_ROOT.mkdir(parents=True, exist_ok=True)
@@ -185,7 +195,7 @@ if DEBUG:
     # So you don't have to add localhost and/or 127.0.0.1 to your Sites table:
     # But note: if your Django project only serves one site, you can set this outside
     # the DEBUG section. See README for details.
-    SITE_ID = 1
+    # SITE_ID = 1
 
     try:
         import debug_toolbar
