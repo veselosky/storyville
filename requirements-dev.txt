@@ -4,8 +4,6 @@
 #
 #    pip-compile --allow-unsafe --output-file=/Users/vince/Devel/storyville/requirements-dev.txt --resolver=backtracking /Users/vince/Devel/storyville/requirements-dev.in
 #
-appnope==0.1.3
-    # via ipython
 asgiref==3.6.0
     # via django
 asttokens==2.2.1
@@ -13,7 +11,7 @@ asttokens==2.2.1
 backcall==0.2.0
     # via ipython
 black==23.3.0
-    # via -r /Users/vince/Devel/storyville/requirements-dev.in
+    # via -r requirements-dev.in
 build==0.10.0
     # via pip-tools
 cachetools==5.3.0
@@ -31,14 +29,14 @@ click==8.1.3
 colorama==0.4.6
     # via tox
 coverage==7.2.3
-    # via -r /Users/vince/Devel/storyville/requirements-dev.in
+    # via -r requirements-dev.in
 decorator==5.1.1
     # via ipython
 distlib==0.3.6
     # via virtualenv
 django==4.2
     # via
-    #   -r /Users/vince/Devel/storyville/requirements.in
+    #   -r requirements.in
     #   django-bootstrap-icons
     #   django-debug-toolbar
     #   django-extensions
@@ -49,22 +47,22 @@ django==4.2
 django-bootstrap-icons==0.8.3
     # via django-genericsite
 django-debug-toolbar==4.0.0
-    # via -r /Users/vince/Devel/storyville/requirements-dev.in
+    # via -r requirements-dev.in
 django-environ==0.10.0
-    # via -r /Users/vince/Devel/storyville/requirements.in
+    # via -r requirements.in
 django-extensions==3.2.1
-    # via -r /Users/vince/Devel/storyville/requirements.in
+    # via -r requirements.in
 django-genericsite @ https://github.com/veselosky/django-genericsite/releases/download/release-0.0.2/django_genericsite-0.0.2-py3-none-any.whl
-    # via -r /Users/vince/Devel/storyville/requirements.in
+    # via -r requirements.in
 django-rich==1.5.0
-    # via -r /Users/vince/Devel/storyville/requirements.in
+    # via -r requirements.in
 django-taggit==3.1.0
     # via django-genericsite
 django-tinymce==3.4.0
     # via django-genericsite
 docutils==0.19
     # via
-    #   -r /Users/vince/Devel/storyville/requirements.in
+    #   -r requirements.in
     #   django-genericsite
 easy-thumbnails==2.8.5
     # via django-genericsite
@@ -75,13 +73,13 @@ filelock==3.11.0
     #   tox
     #   virtualenv
 gunicorn==20.1.0
-    # via -r /Users/vince/Devel/storyville/requirements.in
+    # via -r requirements.in
 idna==3.4
     # via requests
 ipython==8.12.0
-    # via -r /Users/vince/Devel/storyville/requirements-dev.in
+    # via -r requirements-dev.in
 isort==5.12.0
-    # via -r /Users/vince/Devel/storyville/requirements-dev.in
+    # via -r requirements-dev.in
 jedi==0.18.2
     # via ipython
 markdown-it-py==2.2.0
@@ -108,11 +106,11 @@ pickleshare==0.7.5
     # via ipython
 pillow==9.5.0
     # via
-    #   -r /Users/vince/Devel/storyville/requirements.in
+    #   -r requirements.in
     #   django-genericsite
     #   easy-thumbnails
 pip-tools==6.13.0
-    # via -r /Users/vince/Devel/storyville/requirements-dev.in
+    # via -r requirements-dev.in
 platformdirs==3.2.0
     # via
     #   black
@@ -140,27 +138,20 @@ requests==2.28.2
     # via django-bootstrap-icons
 rich==13.3.4
     # via
-    #   -r /Users/vince/Devel/storyville/requirements.in
+    #   -r requirements.in
     #   django-rich
 setproctitle==1.3.2
-    # via -r /Users/vince/Devel/storyville/requirements.in
+    # via -r requirements.in
 six==1.16.0
     # via asttokens
-sqlparse==0.4.3
+sqlparse==0.4.4
     # via
     #   django
     #   django-debug-toolbar
 stack-data==0.6.2
     # via ipython
-tomli==2.0.1
-    # via
-    #   black
-    #   build
-    #   pyproject-api
-    #   pyproject-hooks
-    #   tox
 tox==4.4.12
-    # via -r /Users/vince/Devel/storyville/requirements-dev.in
+    # via -r requirements-dev.in
 traitlets==5.9.0
     # via
     #   ipython
