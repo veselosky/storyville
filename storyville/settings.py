@@ -182,8 +182,72 @@ except ImportError:
     pass
 
 
+# Use rich logging for pretty console logs
+# https://www.willmcgugan.com/blog/tech/post/richer-django-logging/
+LOG_LEVEL = env("LOG_LEVEL", default="INFO")
+LOG_FILE = env("LOG_FILE", default=None)
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {"rich": {"datefmt": "[%X]"}},
+    "handlers": {
+        "console": {
+            "class": "rich.logging.RichHandler",
+            "formatter": "rich",
+            "level": LOG_LEVEL,
+            "rich_tracebacks": True,
+        }
+    },
+    "loggers": {
+        "django": {"handlers": ["console"]},
+        "": {"handlers": ["console"]},
+    },
+}
+if LOG_FILE:
+    LOGGING["handlers"]["file"] = {
+        "level": LOG_LEVEL,
+        "class": "logging.handlers.TimedRotatingFileHandler",
+        "filename": LOG_FILE,
+        "when": "W0",  # Rotate weekly on Monday
+        "backupCount": 8,
+    }
+    LOGGING["loggers"][""]["handlers"].append("file")
+
 #######################################################################################
-# SECTION 2: DEVELOPMENT: If running in a dev environment, loosen restrictions
+# SECTION 2: App configuration.
+#######################################################################################
+
+THUMBNAIL_PROCESSORS = (
+    "easy_thumbnails.processors.colorspace",
+    "easy_thumbnails.processors.autocrop",
+    "easy_thumbnails.processors.scale_and_crop",
+    "easy_thumbnails.processors.filters",
+)
+THUMBNAIL_WIDGET_OPTIONS = {"size": (160, 90)}
+THUMBNAIL_DEBUG = DEBUG
+
+TINYMCE_DEFAULT_CONFIG = {
+    "height": "320px",
+    "width": "960px",
+    "menubar": "edit view insert format tools table help",
+    "pagebreak_separator": "<!-- pagebreak --><span id=continue-reading></span>",
+    "plugins": "advlist autoresize charmap code codesample help hr image imagetools "
+    "link lists media pagebreak paste searchreplace table toc visualblocks "
+    "visualchars wordcount",
+    "toolbar": "undo redo | bold italic strikethrough | styleselect | removeformat | "
+    "numlist bullist indent outdent | image pagebreak | code",
+    "image_advtab": True,
+    "image_caption": True,
+    "image_class_list": [
+        {"title": "Responsive", "value": "img-fluid"},
+        {"title": "Left", "value": "float-left"},
+        {"title": "Right", "value": "float-right"},
+    ],
+    "image_list": "/mce/recent_images.json",
+}
+
+#######################################################################################
+# SECTION 3: DEVELOPMENT: If running in a dev environment, loosen restrictions
 # and add debugging tools.
 #######################################################################################
 
@@ -209,19 +273,3 @@ if DEBUG:
     except ImportError:
         # Dev tools are optional
         pass
-
-    # Use rich logging for pretty console logs
-    # https://www.willmcgugan.com/blog/tech/post/richer-django-logging/
-    LOGGING = {
-        "version": 1,
-        "disable_existing_loggers": False,
-        "formatters": {"rich": {"datefmt": "[%X]"}},
-        "handlers": {
-            "console": {
-                "class": "rich.logging.RichHandler",
-                "formatter": "rich",
-                "level": "DEBUG",
-            }
-        },
-        "loggers": {"django": {"handlers": ["console"]}},
-    }
