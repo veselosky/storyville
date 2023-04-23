@@ -1,0 +1,7 @@
+:root {
+  --body-font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "DejaVu Sans Mono", monospace;
+}
+body {
+  font-family: var(--body-font-family);
+}
