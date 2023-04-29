@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "django.contrib.redirects",
     "django.contrib.sites",
     "django.contrib.staticfiles",
+    "genericsite.adminoverride",
 ]
 
 
@@ -61,7 +62,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     # Set request.site by checking for a Site where domain is the host header
     "django.contrib.sites.middleware.CurrentSiteMiddleware",
-    "django.contrib.redirects.middleware.RedirectFallbackMiddleware",
+    "genericsite.redirects.TemporaryRedirectFallbackMiddleware",
 ]
 
 TEMPLATES = [
@@ -250,6 +251,7 @@ TINYMCE_DEFAULT_CONFIG = {
 # SECTION 3: DEVELOPMENT: If running in a dev environment, loosen restrictions
 # and add debugging tools.
 #######################################################################################
+SITE_ID = env("SITE_ID", default=None, cast=int)
 
 # Rich test output
 TEST_RUNNER = "django_rich.test.RichRunner"
