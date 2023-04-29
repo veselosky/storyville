@@ -1,0 +1,20 @@
+{% extends 'genericsite/base.html' %}
+
+{% block header %}
+<header class="page_header container-fluid">
+  {% include header_template %}
+</header>
+{% endblock header %}
+
+{% block precontent %}
+<div class="{{bootstrap_container_class}} py-3">
+  {% include "veselosky.me/blocks/novels_card.html" %}
+</div>
+{% endblock precontent %}
+
+{% block content %}
+<div class="{{bootstrap_container_class}}">
+  <h2>Latest Articles</h2>
+</div>
+{{ block.super }}
+{% endblock content %}

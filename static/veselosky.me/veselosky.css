@@ -1,0 +1,26 @@
+[data-bs-theme="dark"] {
+  --bs-heading-color: var(--bs-emphasis-color);
+}
+article {
+  max-width: 50em;
+}
+.brand a {
+  color: var(--bs-emphasis-color);
+  text-decoration: none;
+}
+.brand a:hover {
+  text-decoration: underline;
+}
+.card-header .audience {
+  font-size: smaller;
+  font-variant: small-caps;
+  font-variant: all-small-caps;
+  font-weight: normal;
+}
+.page_header {
+  background-color: var(--bs-secondary-bg);
+  background-image: url("./CF-Banner.jpg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+}
