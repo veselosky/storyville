@@ -30,13 +30,13 @@ click==8.1.3
     #   pip-tools
 colorama==0.4.6
     # via tox
-coverage==7.2.3
+coverage==7.2.5
     # via -r requirements-dev.in
 decorator==5.1.1
     # via ipython
 distlib==0.3.6
     # via virtualenv
-django==4.2
+django==4.2.1
     # via
     #   -r requirements.in
     #   django-bootstrap-icons
@@ -54,7 +54,7 @@ django-environ==0.10.0
     # via -r requirements.in
 django-extensions==3.2.1
     # via -r requirements.in
-django-genericsite @ https://github.com/veselosky/django-genericsite/releases/download/release-0.1.1/django_genericsite-0.1.1-py3-none-any.whl
+django-genericsite @ https://github.com/veselosky/django-genericsite/releases/download/release-0.1.2/django_genericsite-0.1.2-py3-none-any.whl
     # via -r requirements.in
 django-rich==1.5.0
     # via -r requirements.in
@@ -70,7 +70,7 @@ easy-thumbnails==2.8.5
     # via django-genericsite
 executing==1.2.0
     # via stack-data
-filelock==3.11.0
+filelock==3.12.0
     # via
     #   tox
     #   virtualenv
@@ -78,7 +78,7 @@ gunicorn==20.1.0
     # via -r requirements.in
 idna==3.4
     # via requests
-ipython==8.12.0
+ipython==8.13.1
     # via -r requirements-dev.in
 isort==5.12.0
     # via -r requirements-dev.in
@@ -113,7 +113,7 @@ pillow==9.5.0
     #   easy-thumbnails
 pip-tools==6.13.0
     # via -r requirements-dev.in
-platformdirs==3.2.0
+platformdirs==3.5.0
     # via
     #   black
     #   tox
@@ -128,7 +128,7 @@ pure-eval==0.2.2
     # via stack-data
 pydantic==1.10.7
     # via django-genericsite
-pygments==2.15.0
+pygments==2.15.1
     # via
     #   ipython
     #   rich
@@ -136,9 +136,9 @@ pyproject-api==1.5.1
     # via tox
 pyproject-hooks==1.0.0
     # via build
-requests==2.28.2
+requests==2.30.0
     # via django-bootstrap-icons
-rich==13.3.4
+rich==13.3.5
     # via
     #   -r requirements.in
     #   django-rich
@@ -159,7 +159,7 @@ tomli==2.0.1
     #   pyproject-api
     #   pyproject-hooks
     #   tox
-tox==4.4.12
+tox==4.5.1
     # via -r requirements-dev.in
 traitlets==5.9.0
     # via
@@ -167,9 +167,9 @@ traitlets==5.9.0
     #   matplotlib-inline
 typing-extensions==4.5.0
     # via pydantic
-urllib3==1.26.15
+urllib3==2.0.1
     # via requests
-virtualenv==20.21.0
+virtualenv==20.23.0
     # via tox
 wcwidth==0.2.6
     # via prompt-toolkit
@@ -177,9 +177,9 @@ wheel==0.40.0
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==23.0.1
+pip==23.1.2
     # via pip-tools
-setuptools==67.6.1
+setuptools==67.7.2
     # via
     #   gunicorn
     #   pip-tools
