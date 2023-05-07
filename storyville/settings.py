@@ -14,6 +14,7 @@ See also https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 from pathlib import Path
 
 import environ
+import genericsite.apps
 
 PROJECT = __name__.split(".")[0]
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,29 +27,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 WSGI_APPLICATION = f"{PROJECT}.wsgi.application"
 ROOT_URLCONF = f"{PROJECT}.urls"
 
-INSTALLED_APPS = [
-    # Add your custom apps here:
-    "genericsite",
-    # 3rd party apps used by GenericSite
-    "django_bootstrap_icons",
-    "easy_thumbnails",
-    "taggit",
-    "tinymce",
+INSTALLED_APPS = genericsite.apps.plus(
     # Third party apps:
     "django_extensions",
-    # Core Django apps below custom so we can override their templates
-    "django.contrib.admin",
-    "django.contrib.admindocs",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "django.contrib.redirects",
-    "django.contrib.sites",
-    "django.contrib.staticfiles",
-    "genericsite.adminoverride",
-]
-
+)
 
 MIDDLEWARE = [
     # https://docs.djangoproject.com/en/4.2/ref/middleware/#django.middleware.security.SecurityMiddleware
@@ -218,34 +200,11 @@ if LOG_FILE:
 # SECTION 2: App configuration.
 #######################################################################################
 
-THUMBNAIL_PROCESSORS = (
-    "easy_thumbnails.processors.colorspace",
-    "easy_thumbnails.processors.autocrop",
-    "easy_thumbnails.processors.scale_and_crop",
-    "easy_thumbnails.processors.filters",
-)
-THUMBNAIL_WIDGET_OPTIONS = {"size": (160, 90)}
+THUMBNAIL_PROCESSORS = genericsite.apps.THUMBNAIL_PROCESSORS
+THUMBNAIL_WIDGET_OPTIONS = genericsite.apps.THUMBNAIL_WIDGET_OPTIONS
 THUMBNAIL_DEBUG = DEBUG
 
-TINYMCE_DEFAULT_CONFIG = {
-    "height": "320px",
-    "width": "960px",
-    "menubar": "edit view insert format tools table help",
-    "pagebreak_separator": "<!-- pagebreak --><span id=continue-reading></span>",
-    "plugins": "advlist autoresize charmap code codesample help hr image imagetools "
-    "link lists media pagebreak paste searchreplace table toc visualblocks "
-    "visualchars wordcount",
-    "toolbar": "undo redo | bold italic strikethrough | styleselect | removeformat | "
-    "numlist bullist indent outdent | image pagebreak | code",
-    "image_advtab": True,
-    "image_caption": True,
-    "image_class_list": [
-        {"title": "Responsive", "value": "img-fluid"},
-        {"title": "Left", "value": "float-left"},
-        {"title": "Right", "value": "float-right"},
-    ],
-    "image_list": "/images/recent.json",
-}
+TINYMCE_DEFAULT_CONFIG = genericsite.apps.TINYMCE_CONFIG
 
 #######################################################################################
 # SECTION 3: DEVELOPMENT: If running in a dev environment, loosen restrictions
