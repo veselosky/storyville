@@ -1,0 +1,32 @@
+{% extends 'genericsite/base.html' %}{% load static %}
+
+{% block precontent %}
+<div class="{{bootstrap_container_class}} precontent">
+  <div class="banner"><img src="{% static "iqlovecraft/PatreonBanner-001.png" %}" alt="attractive women with cleavage" class="img-fluid"></div>
+  <div class="row my-3" style="border-bottom: 1px solid black">
+    <div class="col-6">
+      <h2>Welcome Readers!</h2>
+      <p>Welcome to the online home of I.Q. Lovecraft! I spin tales of supernatural
+        erotic situations, exploring pansexuality, polyamory, and diverse sexual
+        practices.</p>
+    </div>
+    <div class="col-6">
+      <h2>Become a Patron</h2>
+      <a href="https://www.patreon.com/iqlovecraft">
+      <img
+        src="{% static "iqlovecraft/Digital-Patreon-Logo_FieryCoral.png" %}"
+        alt="Patreon logo"
+        class="float-start"
+        width="100"
+        height="100"
+        >
+      </a>
+      <p>Patrons get a sexy new chapter of work in progress <i>every week</i>, bonus scenes,
+        FREE books, and more!
+      </p>
+      <p class="text-end"><a href="https://www.patreon.com/iqlovecraft" class="btn btn-primary">Become a Patron</a></p>
+
+    </div>
+  </div>
+</div>
+{% endblock precontent %}

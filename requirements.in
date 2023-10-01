@@ -1,7 +1,7 @@
 django >= 4.2, < 5.0
 django-environ >= 0.10.0
 django-extensions >= 3.2.1
-django-genericsite @ https://github.com/veselosky/django-genericsite/releases/download/release-0.1.3/django_genericsite-0.1.3-py3-none-any.whl
+django-genericsite @ https://github.com/veselosky/django-genericsite/releases/download/release-0.1.4/django_genericsite-0.1.4-py3-none-any.whl
 django-rich >= 1.5.0
 docutils >= 0.19
 pillow >= 9.5.0
