@@ -8,9 +8,11 @@ asgiref==3.7.2
     # via django
 certifi==2023.7.22
     # via requests
-charset-normalizer==3.3.0
+charset-normalizer==3.3.2
     # via requests
-django==4.2.5
+defusedxml==0.7.1
+    # via django-bootstrap-icons
+django==4.2.7
     # via
     #   -r requirements.in
     #   django-bootstrap-icons
@@ -19,7 +21,7 @@ django==4.2.5
     #   django-rich
     #   django-taggit
     #   easy-thumbnails
-django-bootstrap-icons==0.8.5
+django-bootstrap-icons==0.8.6
     # via django-genericsite
 django-environ==0.11.2
     # via -r requirements.in
@@ -27,7 +29,7 @@ django-extensions==3.2.3
     # via -r requirements.in
 django-genericsite @ https://github.com/veselosky/django-genericsite/releases/download/release-0.1.4/django_genericsite-0.1.4-py3-none-any.whl
     # via -r requirements.in
-django-rich==1.7.0
+django-rich==1.8.0
     # via -r requirements.in
 django-taggit==3.1.0
     # via django-genericsite
@@ -49,7 +51,7 @@ mdurl==0.1.2
     # via markdown-it-py
 packaging==23.2
     # via gunicorn
-pillow==10.0.1
+pillow==10.1.0
     # via
     #   -r requirements.in
     #   django-genericsite
@@ -64,7 +66,7 @@ rich==13.6.0
     # via
     #   -r requirements.in
     #   django-rich
-setproctitle==1.3.2
+setproctitle==1.3.3
     # via -r requirements.in
 sqlparse==0.4.4
     # via django
@@ -72,5 +74,5 @@ typing-extensions==4.8.0
     # via
     #   asgiref
     #   pydantic
-urllib3==2.0.5
+urllib3==2.0.7
     # via requests
