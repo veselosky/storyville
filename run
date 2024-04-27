@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+
+# Based on the Taskfile format from https://github.com/adriancooney/Taskfile
+# Please keep functions sorted alphabetically for ease of editing.
+
+# A useful path mod
+PATH=./node_modules/.bin:$PATH
+
+#######################################################################
+# Set some commonly used globals
+#######################################################################
+BASE_DIR=$(cd `dirname $0`; pwd)
+BASE_PYTHON=`which python3.10 || which python3 || which python`
+PROJECT_NAME=`basename "$BASE_DIR"`
+
+# Some ANSI colors for pretty messages
+NORMAL="$(tput sgr0)"
+BLACK="$(tput setaf 0)"
+RED="$(tput setaf 1)"
+GREEN="$(tput setaf 2)"
+YELLOW="$(tput setaf 3)"
+BLUE="$(tput setaf 4)"
+MAGENTA="$(tput setaf 5)"
+CYAN="$(tput setaf 6)"
+WHITE="$(tput setaf 7)"
+
+#######################################################################
+# Function declarations
+#######################################################################
+
+function generate { ## Generate static site
+    [ -f "$DJANGO" ] || echo "Django not found, checked $DJANGO -- Bailing..."
+    SITE_ID=1 ./manage.py distill-local --settings=storyville.settings --collectstatic $BASE_DIR/var/veselosky
+    SITE_ID=3 ./manage.py distill-local --settings=storyville.settings --collectstatic $BASE_DIR/var/lovecraft
+}
+
+function help { ## Display usage for this application
+    echo "$0 <task> <args>"
+    echo "Tasks:"
+    # compgen -A function | cat -n
+    grep -E '^function [a-zA-Z_-]+ {.*?## .*$$' $0 | \
+        sed -e 's/function //' | \
+        sort | \
+        awk 'BEGIN {FS = "{.*?## "}; {printf "\033[93m%-30s\033[92m %s\033[0m\n", $1, $2}'
+}
+
+function server { ## Run the development server in DEBUG mode
+    DJANGO=".venv/bin/django-admin"
+    if [ ! -f "$DJANGO" ]; then
+        echo "Python virtual environment not found or Django not installed. Bailing..."
+        exit 1
+    fi
+    export DEBUG=1
+    $DJANGO --settings=storyville.adminsettings runserver
+}
+
+#######################################################################
+# Finally, execute it.
+#######################################################################
+
+TIMEFORMAT="Task completed in %3lR"
+# Replace "help" with the name of the desired default function
+time ${@:-server}
