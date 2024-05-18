@@ -16,10 +16,10 @@ Including another URLconf
 from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
-from genericsite import views as generic
+from genericsite import views_optional
 
 urlpatterns = [
-    path("accounts/profile/", generic.ProfileView.as_view(), name="account_profile"),
+    path("accounts/profile/", views_optional.ProfileView.as_view(), name="account_profile"),
     path("accounts/", include("django.contrib.auth.urls")),
     path("admin/doc/", include("django.contrib.admindocs.urls")),
     path("admin/", admin.site.urls),

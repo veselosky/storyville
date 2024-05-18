@@ -27,10 +27,31 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 WSGI_APPLICATION = f"{PROJECT}.wsgi.application"
 ROOT_URLCONF = f"{PROJECT}.urls"
 
-INSTALLED_APPS = genericsite.apps.plus(
-    # Third party apps:
+# Application definition
+INSTALLED_APPS = [
+    # genericsite apps for static site generation
+    *genericsite.apps.CONTENT,
+    "staticpub",
     "django_extensions",
-)
+    # "allauth",
+    # "allauth.account",
+    # "allauth.socialaccount",
+    "tinymce",  # Optional, used by GenericSite admin when available
+    # contrib apps required by genericsite for statics
+    "django.contrib.contenttypes",
+    "django.contrib.redirects",
+    "django.contrib.sitemaps",
+    "django.contrib.sites",
+    "django.contrib.staticfiles",
+    # contrib apps required by genericsite for dynamically served apps
+    "django.contrib.auth",
+    "django.contrib.messages",
+    "django.contrib.sessions",
+    # Optional admin with genericsite extensions
+    "django.contrib.admin",
+    "django.contrib.admindocs",
+    *genericsite.apps.ADMIN,
+]
 
 MIDDLEWARE = [
     # https://docs.djangoproject.com/en/4.2/ref/middleware/#django.middleware.security.SecurityMiddleware
@@ -199,11 +220,6 @@ if LOG_FILE:
 #######################################################################################
 # SECTION 2: App configuration.
 #######################################################################################
-
-THUMBNAIL_PROCESSORS = genericsite.apps.THUMBNAIL_PROCESSORS
-THUMBNAIL_WIDGET_OPTIONS = genericsite.apps.THUMBNAIL_WIDGET_OPTIONS
-THUMBNAIL_DEBUG = DEBUG
-
 TINYMCE_DEFAULT_CONFIG = genericsite.apps.TINYMCE_CONFIG
 
 #######################################################################################
