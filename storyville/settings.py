@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 See also https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 """
+
 from pathlib import Path
 
 import environ
@@ -125,7 +126,7 @@ DATA_DIR = Path(env("DATA_DIR", default=BASE_DIR.joinpath("var")))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_URL = "/static/"
+STATIC_URL = "https://media.mindvessel.com/static/"
 STATIC_ROOT = DATA_DIR / "static"
 STATIC_ROOT.mkdir(parents=True, exist_ok=True)
 STATICFILES_DIRS = [BASE_DIR / "static"]
@@ -145,12 +146,25 @@ STORAGES = {
         ),
     },
     "staticfiles": {
-        "BACKEND": env(
-            "STATICFILES_STORAGE",
-            default="django.contrib.staticfiles.storage.ManifestStaticFilesStorage",
-        ),
+        "BACKEND": "storages.backends.s3.S3Storage",
+        "OPTIONS": {
+            "location": "static",
+            "bucket_name": env(
+                "AWS_STORAGE_BUCKET_NAME", default="storyville-media-mindvessel-com"
+            ),
+            "custom_domain": env(
+                "AWS_S3_CUSTOM_DOMAIN", default="media.mindvessel.com"
+            ),
+            "endpoint_url": env("AWS_S3_ENDPOINT_URL"),
+        },
+    },
+    "staticpub": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+        "LOCATION": DATA_DIR / "staticpub",
     },
 }
+
+STATICPUB_PRODUCERS = []
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
