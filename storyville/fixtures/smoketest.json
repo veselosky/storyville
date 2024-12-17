@@ -1,0 +1,1311 @@
+[
+  {
+    "model": "sitevars.sitevar",
+    "pk": 3,
+    "fields": {
+      "site": 1,
+      "name": "tagline",
+      "value": "Author, Educator, Software Developer"
+    }
+  },
+  {
+    "model": "sitevars.sitevar",
+    "pk": 5,
+    "fields": {
+      "site": 1,
+      "name": "custom_copyright_holder",
+      "value": "Vincent Veselosky"
+    }
+  },
+  {
+    "model": "sitevars.sitevar",
+    "pk": 6,
+    "fields": {
+      "site": 1,
+      "name": "header_template",
+      "value": "storyville/blocks/header_masthead.html"
+    }
+  },
+  {
+    "model": "sitevars.sitevar",
+    "pk": 7,
+    "fields": {
+      "site": 1,
+      "name": "custom_stylesheet",
+      "value": "veselosky.me/veselosky.css"
+    }
+  },
+  {
+    "model": "commoncontent.image",
+    "pk": 1,
+    "fields": {
+      "title": "Getting Things Done Flowchart",
+      "description": "",
+      "image_file": "getting-things-done.jpg",
+      "width": 323,
+      "height": 500,
+      "alt_text": "Workflow diagram from Getting Things Done",
+      "site": 1,
+      "mime_type": "image/jpeg",
+      "custom_copyright_holder": "",
+      "custom_copyright_notice": "",
+      "upload_date": "2023-04-30T17:47:14.923Z",
+      "date_created": null
+    }
+  },
+  {
+    "model": "commoncontent.image",
+    "pk": 2,
+    "fields": {
+      "title": "Martin Luther King Jr.",
+      "description": "",
+      "image_file": "Martin_Luther_King_Jr_NYWTS_2-e1421691902357-1038x576.jpg",
+      "width": 1038,
+      "height": 576,
+      "alt_text": "Martin Luther King Jr.",
+      "site": 1,
+      "mime_type": "image/jpeg",
+      "custom_copyright_holder": "",
+      "custom_copyright_notice": "",
+      "upload_date": "2023-04-30T17:49:53.654Z",
+      "date_created": null
+    }
+  },
+  {
+    "model": "commoncontent.image",
+    "pk": 3,
+    "fields": {
+      "title": "Nano 2017 Recap Writing Stats Chart",
+      "description": "",
+      "image_file": "WordChar2017-11.png",
+      "width": 1766,
+      "height": 1342,
+      "alt_text": "Chart showing words written per month",
+      "site": 1,
+      "mime_type": "image/png",
+      "custom_copyright_holder": "",
+      "custom_copyright_notice": "",
+      "upload_date": "2023-04-30T18:03:40.765Z",
+      "date_created": null
+    }
+  },
+  {
+    "model": "commoncontent.image",
+    "pk": 4,
+    "fields": {
+      "title": "Cursing Fate Cover",
+      "description": "",
+      "image_file": "cover-PC1-CursingFate.jpg",
+      "width": 1600,
+      "height": 2400,
+      "alt_text": "Book Cover: Cursing Fate",
+      "site": 1,
+      "mime_type": "image/jpeg",
+      "custom_copyright_holder": "",
+      "custom_copyright_notice": "",
+      "upload_date": "2023-04-30T18:23:21.021Z",
+      "date_created": null
+    }
+  },
+  {
+    "model": "commoncontent.image",
+    "pk": 5,
+    "fields": {
+      "title": "Shifting Loyalties Cover",
+      "description": "",
+      "image_file": "cover-PC2-ShiftingLoyalties.jpg",
+      "width": 1600,
+      "height": 2400,
+      "alt_text": "Book Cover: Shifting Loyalties",
+      "site": 1,
+      "mime_type": "image/jpeg",
+      "custom_copyright_holder": "",
+      "custom_copyright_notice": "",
+      "upload_date": "2023-04-30T18:25:10.823Z",
+      "date_created": null
+    }
+  },
+  {
+    "model": "commoncontent.image",
+    "pk": 6,
+    "fields": {
+      "title": "2018 Word Count Chart",
+      "description": "",
+      "image_file": "2018-summary.png",
+      "width": 1754,
+      "height": 674,
+      "alt_text": "Chart: 2018 Word Counts by Month",
+      "site": 1,
+      "mime_type": "image/png",
+      "custom_copyright_holder": "",
+      "custom_copyright_notice": "",
+      "upload_date": "2023-04-30T18:36:36.358Z",
+      "date_created": null
+    }
+  },
+  {
+    "model": "commoncontent.image",
+    "pk": 7,
+    "fields": {
+      "title": "Storyboard for Bad Penny",
+      "description": "",
+      "image_file": "BadPennyBoard.jpg",
+      "width": 4006,
+      "height": 2506,
+      "alt_text": "brief scene descriptions laid out in a grid",
+      "site": 1,
+      "mime_type": "image/jpeg",
+      "custom_copyright_holder": "",
+      "custom_copyright_notice": "",
+      "upload_date": "2023-04-30T18:39:25.363Z",
+      "date_created": null
+    }
+  },
+  {
+    "model": "commoncontent.image",
+    "pk": 8,
+    "fields": {
+      "title": "Summoning Courage Cover",
+      "description": "",
+      "image_file": "cover-PC3-SummoningCourage.jpg",
+      "width": 1600,
+      "height": 2400,
+      "alt_text": "Book Cover: Summoning Courage",
+      "site": 1,
+      "mime_type": "image/jpeg",
+      "custom_copyright_holder": "",
+      "custom_copyright_notice": "",
+      "upload_date": "2023-04-30T18:43:56.333Z",
+      "date_created": null
+    }
+  },
+  {
+    "model": "commoncontent.section",
+    "pk": 1,
+    "fields": {
+      "title": "Media",
+      "slug": "media",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "",
+      "date_published": "2023-04-23T12:03:47Z",
+      "date_modified": null,
+      "expires": null,
+
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US"
+    }
+  },
+  {
+    "model": "commoncontent.section",
+    "pk": 2,
+    "fields": {
+      "title": "Business",
+      "slug": "business",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "",
+      "date_published": "2023-04-23T12:33:00Z",
+      "date_modified": null,
+      "expires": null,
+
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US"
+    }
+  },
+  {
+    "model": "commoncontent.section",
+    "pk": 3,
+    "fields": {
+      "title": "Life",
+      "slug": "life",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "",
+      "date_published": "2023-04-23T12:34:53Z",
+      "date_modified": null,
+      "expires": null,
+
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US"
+    }
+  },
+  {
+    "model": "commoncontent.section",
+    "pk": 4,
+    "fields": {
+      "title": "Creative Process",
+      "slug": "creative-process",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "",
+      "date_published": "2023-05-06T23:55:25Z",
+      "date_modified": null,
+      "expires": null,
+
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US"
+    }
+  },
+  {
+    "model": "commoncontent.section",
+    "pk": 5,
+    "fields": {
+      "title": "News",
+      "slug": "news",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "",
+      "date_published": "2023-04-30T18:21:41Z",
+      "date_modified": null,
+      "expires": null,
+
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US"
+    }
+  },
+  {
+    "model": "commoncontent.homepage",
+    "pk": 1,
+    "fields": {
+      "title": "Vince Veselosky: Author, Publisher, Software Developer",
+      "slug": "default-home-page",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": null,
+      "base_template": "veselosky.me/index.html",
+      "content_template": "",
+      "body": "",
+      "date_published": "2023-04-23T14:00:36Z",
+      "date_modified": null,
+      "expires": null,
+
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+      "admin_name": "Default Home Page"
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 1,
+    "fields": {
+      "title": "How Newspapers Lost the Classifieds Business (and how to get it back)",
+      "slug": "how-newspapers-lost-the-classifieds-business-and-h",
+      "status": "usable",
+      "site": 1,
+      "description": "Newspapers used to own the local classifieds business, but they failed to keep up with changing times. Here's the key business model shift that leads to success.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>Time was,&nbsp;<a href=\"http://mediashift.org/2009/08/future-of-local-news-about-more-than-paid-content225/\">newspapers owned the local classified ads business</a>, and it was their cash cow. Many people bought the paper just for the classifieds, and it was by far the most valuable real estate of the paper. In recent years, free Internet- based alternatives like Craig&rsquo;s List decimated their business and contributed greatly to the decline of newspapers.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>In this November 2009 interview,&nbsp;<a href=\"https://twitter.com/craigoodle\">Craig Donato</a>, CEO of&nbsp;<a href=\"http://www.oodle.com/\">Oodle</a>, an online classifieds startup, explains that&nbsp;<a href=\"https://mixergy.com/interviews/oodle-craig-donato/\">&ldquo;If You&rsquo;re The Challenger, You Have To Play A Different Game&rdquo;</a>. He tells&nbsp;<a href=\"https://www.linkedin.com/in/andrewwarner/\">Andrew Warner</a>&nbsp;how he was able to build a successful online classifieds business despite free competition, and become the classifieds provider for many local newspapers.</p>\r\n<p>Donato shows that his company achieved success through innovation based on customer needs, whereas newspapers remained complacent and failed to compete. Clearly, there is room for both free and paid providers in this industry, but the key is innovation in providing customer value. Newspapers, so long enjoying monopoly privileges in their markets, didn&rsquo;t have the innovation experience they needed to compete in the newly opened market.</p>\r\n<p><a href=\"https://mixergy.com/interviews/oodle-craig-donato/\">Watch Mixergy&rsquo;s interview with Craig Donato</a></p>",
+      "date_published": "2010-01-08T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 1,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 2,
+    "fields": {
+      "title": "The Real Value of Social Media is its Weakness",
+      "slug": "the-real-value-of-social-media-is-its-weakness",
+      "status": "usable",
+      "site": 1,
+      "description": "Those to whom we are closely connected obviously are valuable to us for personal reasons, but when it comes to economic value, it’s the casual acquaintances who add the most value.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>Many still doubt the utility of social media. I myself was among the doubters until I was forced onto Twitter and Facebook to test the social media integration for a web site I was developing. That&rsquo;s when I discovered that, although&nbsp;<a href=\"https://en.wikipedia.org/wiki/Sturgeon%27s_Law\">Sturgeon&rsquo;s Law</a>&nbsp;applies to social media as much as anything else, the small percentage of &ldquo;good stuff&rdquo; is exceedingly valuable.</p>\r\n<p>Case in point is this article:&nbsp;<a href=\"http://bydanielvictor.com/2010/01/11/in-a-pinch-twitter-found-a-longshot-source/\">In a pinch, Twitter found a long shot source | By Daniel Victor</a>. Stuck playing catch up on a story on a Sunday evening, with deadline looming, journalist Daniel Victor turned to Twitter in a last ditch search for sources. Long story short, Twitter came through for him.</p>\r\n<p>The value of social networking tools like Twitter and Facebook is not immediately obvious to some (it wasn&rsquo;t to me), and may even be counter intuitive. I&rsquo;ve heard complaints that it&rsquo;s difficult or impossible to form deep relationships through digital media, and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Luddite\">Luddite</a>&nbsp;sentiment that we should turn back to &ldquo;face time&rdquo; in our relationships. I disagree with the idea that deep relationships cannot be formed online, but the real value of social media is not in the deep relationships. It&rsquo;s in the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Weak_ties\">weak ties</a>.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>According to network theory, it&rsquo;s the weak ties in a social network that transfer the most value (by social network here we are not talking about the online space, but connections between people however they are formed and maintained). Those to whom we are closely connected obviously are valuable to us for personal reasons, but when it comes to economic value, it&rsquo;s the casual acquaintances who add the most value.</p>\r\n<p>When you are looking for a job, a client, a customer, it is the people in the periphery of your network who can connect you to valuable resources you would not otherwise have found. A former co-worker has a cousin who is looking for someone with just your skills, that sort of thing.&nbsp;<a href=\"http://www.amazon.com/gp/product/0316346624?tag=webquills-20\">Malcolm Gladwell</a>&nbsp;called these people&nbsp;<em>connectors</em>, because they move in and out of many circles, cross-pollinating them like a (forgive the phrase) social butterfly.</p>\r\n<p>The power of social media technologies is that they grease the proverbial skids. Using these new tools, we can all become connectors. The technology enables us to manage a larger number of weak ties than&nbsp;<a href=\"https://en.wikipedia.org/wiki/Dunbar%27s_number\">Dunbar</a>&nbsp;would otherwise permit, thereby increasing the size and theoretical value of our personal network. You might only &ldquo;know&rdquo; a hundred people in &ldquo;real life&rdquo;, but your network on Twitter and LinkedIn might contain 500 links or more. And while all those folks won&rsquo;t come to your sister&rsquo;s wedding, at least a few would be happy to connect you to a local political operator to help you with a story for your paper, as Daniel Victor discovered.</p>\r\n<p>The true value of social media is not the strong connections it enables, but the weak ones.</p>",
+      "date_published": "2010-01-12T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 1,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 3,
+    "fields": {
+      "title": "The Three C's of New Media: Creation, Curation, and Compilation",
+      "slug": "the-three-cs-of-new-media-creation-curation-and-co",
+      "status": "usable",
+      "site": 1,
+      "description": "Every media business is built around at least one of three key content activities: creation of content, curation of content, and compilation of data into content. Many media businesses, especially the large ones, make all three of these activities core competencies.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>Every media business is built around at least one of three key content activities: creation of content, curation of content, and compilation of data into content. Many media businesses, especially the large ones, make all three of these activities core competencies. Which sounds most like your business?<!-- pagebreak --><span id=continue-reading></span></p>\r\n<h2>Creation of Content</h2>\r\n<p>This is what most people think of when they think about media: writing articles or features, shooting video, recording audio. In the Internet world it also includes blogging, micro-blogging, and podcasting. The creation (and publication) of original content is often a major focus (and a major expense) for media businesses, both traditional and digital, but it&rsquo;s only one piece of a larger value proposition.</p>\r\n<h2>Curation of Content</h2>\r\n<p>A curator&rsquo;s job is to select, organize, and care for the items in a collection. The title has usually been applied to museum conservators and librarians. In the Information Age, we can all become librarians. In fact, in this age of information overload, the service of selecting and organizing collections of information is more valuable than it ever was.</p>\r\n<p>Like creation, curation of content is not new to digital media. Newspapers have always filled their pages with articles acquired from other sources, and broadcasters likewise fill out their schedules with syndicated content. Complex business relationships have grown up around these practices, and that&rsquo;s a big part of the disruption the Internet is causing. Digital media enables more efficient curation capabilities and new kinds of syndication relationships. The successful digital media business will use the Internet, software, and human ingenuity to become the best information filter for its audience.</p>\r\n<h2>Compilation of Data as Content</h2>\r\n<p>Before the Internet, compilation and publication of large data sets was the job of specialty publishers, and except for the once ubiquitous phone book and the ever useful roadmap, such publications were expensive and difficult to acquire. In the new digital media, compiling data sets into content and distributing access to the data has become relatively inexpensive. Google, Microsoft, and Yahoo now give away access to map data and satellite imagery (and see&nbsp;<a href=\"http://www.openstreetmap.org/\">OpenStreetMap</a>&nbsp;for a project that is making map data truly free).</p>\r\n<p>One of the goals of journalists has been not just to deliver the data, but to help people make sense of data and statistics. New digital media tools enable you to collect, query, and visualize data in ways that would have been impossible, or at least prohibitively expensive, just a few years ago. This area represents perhaps the greatest opportunity for Internet-savvy entrepreneurs to leap-frog traditional media. Don&rsquo;t know where to start? Take a look at&nbsp;<a href=\"http://data.gov/\">Data.gov</a>&nbsp;for a huge collection of public domain data waiting to be sifted and visualized.</p>\r\n<h2>How Does Your Digital Media Garden Grow?</h2>\r\n<p>Does your digital media business focus on one of these three areas, or dabble in all three? I would be interested to hear about (and share) what tools you are using in each of these areas. Personally, I&rsquo;m dissatisfied with the curation tools I have tried so far, and for me compilation of data has meant custom programming (I&rsquo;m a web developer by trade).</p>",
+      "date_published": "2010-01-15T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 1,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 4,
+    "fields": {
+      "title": "The Tablet Fallacy (or, Old Media is Screwed)",
+      "slug": "the-tablet-fallacy-or-old-media-is-screwed",
+      "status": "usable",
+      "site": 1,
+      "description": "For you old media geezers, here’s a hint: the problem with your business is not the form factor.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>\"Help me, Obi-wan Tablet. You're my only hope!\" says old media. But these are not the droids they are looking for.</p>\r\n<p>There has been so much&nbsp;<a href=\"http://www.i4u.com/33130/tablets-are-vaporware-ces-2010\">hand waving</a>&nbsp;in the last month about 2010 being &ldquo;the year of the tablet&rdquo;, it boggles the mind. Much of the buzz has centered around the anticipated announcement of a tablet device by Apple, makers of the much-admired iPhone. However, media industry wonks are all abuzz about how the&nbsp;<a href=\"http://gizmodo.com/5370252/apple-tablet-to-redefine-newspapers-textbooks-and-magazines\">new platform will redefine newspapers</a>, magazines, and other print products.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>At the time of this writing, the so-called iSlate is merely speculation and rumor, with any real announcement still more than a week away. I&rsquo;m not going to waste space talking about a theoretical device. What concerns me is the old media heralding this concept as its salvation.</p>\r\n<p>For you old media geezers, here&rsquo;s a hint: the problem with your business is not the form factor.</p>\r\n<p>Setting aside whether it is sensible to put so much emphasis on a portable device that won&rsquo;t fit in your pocket, especially one that is still only a theory, riddle me this: if people won&rsquo;t pay for your content on the web, why would they pay for it on a specialty device? (And if they&nbsp;<em>will</em>&nbsp;pay for it on the web, why would they need a specialty device?)</p>\r\n<p>I&rsquo;ve been listening to lots of speculation about the revolution in content presentation that tablet devices enable. My response is two words: horse hockey! I have yet to hear a single thing about the slate that does not already apply to the web. All those capabilities for rich, interconnected content presentation? The web has had that for years, and you have largely ignored it or&nbsp;<a href=\"https://www.wired.com/2009/11/murdoch-could-block-google-searches-entirely/\">actively fought against it</a>.</p>\r\n<p>No, it isn&rsquo;t the presentation that media companies are excited about. It&rsquo;s the idea of creating a new, closed, expensive product to replace their flagging paper-based distribution. It will be like the old days, they think, when people bought newspapers every day and we commanded premium prices for display ads because we owned all the eyeballs.</p>\r\n<p>Okay, one more time: the old days are over, media people. They are not coming back. &ldquo;Like a newspaper, but&nbsp;<em>digital</em>&rdquo; is not a (viable) product. If we wanted newspapers, we know where to get them. We&rsquo;re sorry about your gravy train going off the tracks, but it is time for you to recognize that&nbsp;<em>you have been disintermediated</em>.</p>\r\n<p>It is time to start thinking about new ways to serve your community, and new business models to go with them. There are plenty of real needs in the marketplace that could be filled by a savvy media company, one willing and able to&nbsp;<a href=\"https://stevebuttry.wordpress.com/2009/04/27/a-blueprint-for-the-complete-community-connection/\">truly innovate</a>&nbsp;rather than just repainting a burning barn.</p>\r\n<p>All this talk about tablets just underscores the fact that the media industry, and especially the newspaper industry, is stuck in twentieth century thinking (and as a result is stuck with their twentieth century business model). Tablets devices may or may not succeed as a form factor, but media businesses definitely will not succeed without some fresh thinking about what their customers need and how to provide it.</p>",
+      "date_published": "2010-01-19T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 1,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 5,
+    "fields": {
+      "title": "Why News Archived Behind Paywall Fails",
+      "slug": "why-news-archived-behind-paywall-fails",
+      "status": "usable",
+      "site": 1,
+      "description": "It should not come as a surprise that it is hard to find people willing to pay good money for yesterday’s news.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>One business model for online news that has been suggested,&nbsp;<a href=\"http://www.nytimes.com/2007/09/18/business/media/18times.html\">tried, and failed</a>, is to make the news free for some short time, and then archive it behind a pay-wall. There is more than one reason why this doesn&rsquo;t work as a business model, but the most obvious one is an old adage that should have been well known in the newspaper industry:&nbsp;<strong>yesterday&rsquo;s news wraps today&rsquo;s fish.</strong></p>\r\n<p><!-- pagebreak --><span id=continue-reading></span>It should not come as a surprise that it is hard to find people willing to pay good money for yesterday&rsquo;s news, especially in the age of 24 hour TV news and instant digital dissemination over the Internet. Old news does have value to historians and researchers, but only after it has faded from the collective memory, decades after the fact. In the space between breaking news and historical research, the value of that content becomes nearly impossible to extract.</p>\r\n<p>Placing news articles behind the pay-wall also fails for another reason: it breaks the web. Rather, it is counter to the way the web works.</p>\r\n<p>Web pages accumulate links, which are crawled by search engines, raising the relative &ldquo;value&rdquo; of that page in search algorithms. The more links you have to your content, the more likely that your content will get significant traffic from search results. Content hidden behind a pay-wall cannot easily accumulate links, and visitors from search engines may find only a barrier page demanding payment rather than the content they were actually searching for. The chance of that visitor reaching for his credit card is much lower than the chance that she will hit the Back button and move on to the next (free) site in the search results.</p>\r\n<p>Certainly there are successful business models where people pay for access to information. Online news archives, however, are more valuable, both to their creators and their consumers, when they are visible to search engines and available at no charge.</p>",
+      "date_published": "2010-01-22T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 1,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 6,
+    "fields": {
+      "title": "NYT’s Freemium Paywall Plan is (maybe) Good Business",
+      "slug": "nyts-freemium-paywall-plan-is-maybe-good-business",
+      "status": "usable",
+      "site": 1,
+      "description": "What the Times is actually proposing is a Freemium model: you get limited access for free, or you pay a fixed fee for unlimited access.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>Last week, the New York Times announced&nbsp;<a href=\"http://www.nytimes.com/2010/01/21/business/media/21times.html?hp&amp;emc=na\">plans to start charging</a>&nbsp;certain readers for access to their web site. Reaction was predictable:&nbsp;<a href=\"http://buzzmachine.com/2010/01/17/the-cockeyed-economics-of-metering-reading/\">Jeff Jarvis complained</a>,&nbsp;<a href=\"https://techcrunch.com/2010/01/20/new-york-times-meter-needle/\">TechCrunch ran some numbers</a>, and&nbsp;<a href=\"http://mashable.com/2010/01/20/new-york-times-to-start-charging/\">Mashable</a>&nbsp;used it as an excuse to talk about a rumored but still unannounced Apple product (seriously Mashable? come on).</p>\r\n<p><a href=\"https://flic.kr/p/5cRfus\"><img src=\"http://farm4.staticflickr.com/3221/2759517762_38be64311d.jpg\" alt=\"The proposed &quot;pay wall&quot; is actually one of the six kinds of Free! You\r\nonly pay if you really value the\r\ncontent.\" /></a></p>\r\n<p><!-- pagebreak --><span id=continue-reading></span>The first thing to understand about the announced pay model is that it is misnamed. The NYT press release refers to it as a &ldquo;metered model&rdquo; and most reporters are using that language. However, this phrase gives entirely the wrong impression. Most people think of &ldquo;metered&rdquo; as the power utility model: you pay for it all, and the more you use, the more you pay.</p>\r\n<p>What the Times is actually proposing is a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Freemium\">Freemium</a>&nbsp;model: you get limited access for free, or you pay a fixed fee for unlimited access. The only thing they are &ldquo;metering&rdquo; (actually&nbsp;<em>measuring</em>) is how many free page views you have used. When you hit a certain number, they ask you to subscribe. (And if you already subscribe to the Times, even just the Sunday edition, you&rsquo;re covered.)</p>\r\n<p>The Times people have put some good thinking into this, and for once the business model does make some sense, despite what&nbsp;<a href=\"http://buzzmachine.com/2010/01/17/the-cockeyed-economics-of-metering-reading/\">Jeff Jarvis says</a>. The logic goes like this. People who use our product frequently are likely to think it is valuable, and are therefore&nbsp;<em>more</em>&nbsp;likely to be willing to pay for that value. Infrequent visitors, who value our product less, can be monetized with lower value ad impressions, but we don&rsquo;t want to spend too much supplying these freeloaders, so we&rsquo;ll cut them off at some point.</p>\r\n<p><a href=\"http://paidcontent.org/article/419-nine-questions-new-york-times-goes-metered/\">PaidContent said it best</a>:</p>\r\n<blockquote>\r\n<p>It&rsquo;s about tweaking the dials, up and down, to capture the payments of truly loyal readers who find continuing value in the brand, while not losing a critical number of occasional visitors.</p>\r\n</blockquote>\r\n<p>As&nbsp;<a href=\"https://techcrunch.com/2010/01/20/new-york-times-meter-needle/\">TechCrunch pointed out</a>, the key to making the model work is to have excellent audience analytics. The Times will have to find the sweet spot in both number of free views and cost of subscription to maximize subscription revenue without sacrificing display ad rates.</p>\r\n<p>But more than that, the company needs to use the subscription as just one of many touch points to build a stronger relationship with loyal readers. It&rsquo;s that relationship from which the real value of the business is derived.</p>",
+      "date_published": "2010-01-25T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 1,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 7,
+    "fields": {
+      "title": "Content Is Not Your Product: Why Newspapers Fail",
+      "slug": "content-is-not-your-product-why-newspapers-fail",
+      "status": "usable",
+      "site": 1,
+      "description": "I hear the same sentiment from executives all over the media industry, and especially from newspapers. “We deserve to get paid for our content.”\r\n\r\nDear Media Executives: You’re doing it wrong!",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>Your newspaper is&nbsp;<a href=\"http://www.amazon.com/gp/product/B000XPPVLK/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B000XPPVLK&amp;linkCode=as2&amp;tag=controlescape-20&amp;linkId=SDEHW6DYH7NP3ET4\">Seth Godin's Meatball Sundae</a>&nbsp;&mdash; full of valuable stuff, but not a product anyone wants to buy.</p>\r\n<p>I hear the same sentiment from executives all over the media industry, and especially from newspapers. &ldquo;We deserve to get paid for our content.&rdquo;</p>\r\n<p>Dear Media Executives:&nbsp;<strong>You&rsquo;re doing it wrong!</strong></p>\r\n<p><!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>The reason so many newspapers are sinking, shrinking, or stinking is that they have totally forgotten what the source of value for their business really is. Somehow they got confused by the 20th century mass production model and deluded themselves into thinking of content as a&nbsp;<em>product</em>&nbsp;that they package and sell.</p>\r\n<p>The business of media has never been about production of anything. Not newspapers. Not radio waves. Not content. The business of media is about&nbsp;<em>connecting people</em>. It&rsquo;s about building relationships.</p>\r\n<p>Content is just a tool we use to build relationships.</p>\r\n<p>When you treat content as a product, your focus is placed on the transaction, and the relationship gets ignored. A transaction, in isolation, does nothing to establish a relationship, to build trust. That trust, that relationship, is what makes the attention of your readers (or viewers or listeners) so valuable to advertisers. Without it, you are just a commodity, and business will go to the lowest bidder. This is the reason that ads are becoming less effective and CPMs are dropping.</p>\r\n<p>The reason we produce content is to establish that trusting relationship with our community by providing them with something valuable&nbsp;<em>for free</em>. I intentionally use the word &ldquo;community&rdquo; and not &ldquo;audience&rdquo; here, because audience implies that we talk and they listen. In the 21st century more than ever, the relationship we as media companies have with our community has to go both ways. We must also listen and help others be heard. These activities are essential to establish a trusting relationship.</p>\r\n<p>Many newspaper executives are up in arms about falling subscription revenues, and want to replace that revenue by charging for content online. But they are missing the point. Subscription revenue was never an end in itself, it was a proxy for measuring the value of the relationships we had created. Newspapers don&rsquo;t necessarily need to replace that revenue, but they&nbsp;<em>do</em>&nbsp;need a new way to measure the value of the relationships they maintain. I don&rsquo;t think charging for access to web sites serves that goal.</p>\r\n<p>The language we use around advertising is broken as well. We talk about selling inventory and picking up remnants, as if communication were a physical good. But what we are really doing is facilitating conversations between businesses in our community and their (potential) customers. The conversations we enable create value for the whole community, some of which we capture as revenue.</p>\r\n<p>The mass market, mass media mindset has run rampant over our community institutions. Our local media (newspaper, TV, and radio alike), now seem to be more concerned with attracting eyeballs than with helping people. Eyeballs have very little value. People have uncountable value. And when people are being treated as a commodity, they notice. They don&rsquo;t like it. They take their eyeballs elsewhere.</p>\r\n<p>As media, we talk, we listen, and we facilitate conversations. These three activities taken together are the essence of a media business. Take heed, old media. Talking is not a product, no matter how valuable it is what you are saying. If all your business does is talk, you will fail. If you want to succeed, then establish trust and build relationships in your community.</p>",
+      "date_published": "2010-01-30T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 1,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 8,
+    "fields": {
+      "title": "Journalism is too important to be locked behind a paywall",
+      "slug": "journalism-is-too-important-to-be-locked-behind-a",
+      "status": "usable",
+      "site": 1,
+      "description": "The reason journalism should be free is that journalism is extremely valuable. Sound counter-intuitive? Not at all.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>When I hear newspaper industry veterans talk about getting paid for content, it makes me want to cry. Case in point, this speech from&nbsp;<a href=\"http://newshare.com/wiki/index.php/Andac-monroe-speech\">Bill Monroe to the Midwest Newspaper Summit</a>&nbsp;in Des Moines, Iowa, given Feb. 4, 2010.</p>\r\n<blockquote>\r\n<p>What&rsquo;s missing in today&rsquo;s marketplace is a way to enable newspapers to protect that content and to profit when others reuse it. &ndash; Bill Monroe</p>\r\n</blockquote>\r\n<p>I&rsquo;m sorry Mr. Monroe, but I must disagree quite strongly. The reason journalism should be free is that journalism is extremely valuable. Sound counter-intuitive? Not at all.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>The process of journalism boils down to this: it is discovering information that few people have, but lots of people need, and disseminating that information as broadly as possible to ensure that those who need it, have it.</p>\r\n<p>In a democratic society, there is possibly no process more valuable than that of journalism, outside of the process of democracy itself. From the neighborhood association to the national government, the public need to be informed about what is being done in their name, so that they can make informed decisions about the who and how of government.</p>\r\n<p>And here is the catch. The output of the journalistic process is only valuable when it is delivered in a timely manner to the widest audience. Journalism that is hidden and inaccessible is oxymoronic. Placing news behind a pay wall makes it less valuable.</p>\r\n<p>If we are to take journalism seriously as a public service, then our goal must be to spread the information farther and faster. It is ironic that the Internet has made the process of journalism more efficient and more effective, yet has made the process of supporting a business around it more difficult. But this is the reality of the 21st century, and denying this by attempting to restrict access to the news is a recipe for failure.</p>\r\n<p>If you are a big shot in the newspaper industry, I beg you, do not destroy journalism in the name of saving it. The nation needs you to be smarter and more innovative than that. Find new business opportunities in making markets more efficient, rather than creating artificial scarcity and friction. Please.</p>\r\n<p>Journalism is just too important to be locked behind a pay wall.</p>",
+      "date_published": "2010-06-13T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 1,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 9,
+    "fields": {
+      "title": "Efficiency: Enemy of Innovation?",
+      "slug": "efficiency-enemy-of-innovation",
+      "status": "usable",
+      "site": 1,
+      "description": "In established processes like manufacturing, efficiency creates value. In exploratory processes like innovation, efficiency destroys value. Use efficiency to generate spare capacity from your established processes. Then, use that capacity to tackle big problems.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>The science of management in the industrial age was all about efficiency. It had to be. The whole concept of capitalism is based on efficiency. An&nbsp;entrepreneur acquires capital at a cost, and that capital must be made to produce profit at a rate higher than the cost of capital. If you borrowed money at 10% to start your business, you had to make it earn 11% at least. That meant controlling costs ruthlessly and milking every bit of productivity from every penny's worth of capital.</p>\r\n<p>But talk to a systems administrator about efficiency. She'll tell you that, in terms of percentage of server utilization, there are two numbers you never want to approach, numbers that will cause midnight pages and pale-faced panic. The first number, of course, is 0%. Everything is down! The second, more surprising but equally frightening number is: 100%! At 100% utilization, everything breaks, because you have no more&nbsp;<em>capacity</em>&nbsp;for work.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>Now a capitalist might look at a well-run data center, and his first instinct is, \"Look at all this waste! Half these servers are sitting idle most of the day.\" But the clever sysadmin will tell him that spare capacity is what keeps the data center running. If your capacity is 100 requests per second, a 101st request can bring the whole system to a screeching halt. 100% and 0% are equally disastrous. If you want your Internet business to operate, you&nbsp;<em>must</em>&nbsp;have spare capacity.</p>\r\n<p>Now, I'm not arguing that efficiency is somehow evil. If you are in a capital intensive business today, you still need to use that capital efficiently. Of course the capitalist theory goes that capital + labor = profit, but what often gets lost in the quest for efficiency is the fact that&nbsp;<em>people are not labor.</em>&nbsp;That's a false assumption, and that formula was never correct (which should not surprise anyone given&nbsp;<a href=\"https://en.wikipedia.org/wiki/Das_Kapital\">its source</a>). It's not labor that turns idle capital into profit; it's&nbsp;<em>creativity</em>&nbsp;and its more productive sister,&nbsp;<em>innovation</em>.</p>\r\n<p>In order to innovate, in order to create, you need some very special ingredients. First, you need&nbsp;<em>people</em>. Smart people, with a desire to solve problems, the ambition to tackle big ones, and the hubris to believe that they can do something better than everyone who has come before them. These people then need&nbsp;<em>time</em>&nbsp;to analyze the problem and devise or improvise solutions, and they need&nbsp;<em>resources</em>&nbsp;(read: money) to test those solutions.</p>\r\n<p>So no, efficiency is not&nbsp;<em>necessarily</em>&nbsp;the enemy of innovation. Saving time and money on existing processes creates&nbsp;<em>spare capacity</em>&nbsp;that can be allocated to innovation. The extra people, time, and money that are not being used to operate the existing business, instead can be applied to solve the next big problem and give birth to new lines of business. But too many business leaders still see people as&nbsp;<em>labor</em>&nbsp;which, if not making capital productive, they label as \"waste\". Spare capacity is inefficiency in their eyes. They see the tools of innovation as inefficiency, and so they attempt to eliminate it. With the result that they eventually become irrelevant because the industry has passed them by.</p>\r\n<p>Don't fall into this trap at your company.&nbsp;In established processes like manufacturing, efficiency creates value. In exploratory processes like innovation, efficiency destroys value.&nbsp;Use efficiency to generate spare capacity from your established processes. Then, use that capacity to tackle big problems. To stay relevant and keep growing, accept that creativity is inefficient, and pay the cost to gain the future rewards.</p>",
+      "date_published": "2012-01-19T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 2,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 10,
+    "fields": {
+      "title": "Natural Laws",
+      "slug": "natural-laws",
+      "status": "usable",
+      "site": 1,
+      "description": "I figure any phrase that people deem to be a \"law\" and find important enough to attribute to a specific person (even if incorrectly) probably contains some real wisdom. Here's a collection of Eponymous Laws from Wikipedia, all of which I have found to be true in my own experience.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>I figure any phrase that people deem to be a \"law\" and find important enough to attribute to a specific person (even if incorrectly) probably contains some real wisdom. Here's a collection of&nbsp;<a href=\"https://en.wikipedia.org/wiki/List_of_eponymous_laws\">Eponymous Laws</a>&nbsp;from Wikipedia, all of which I have found to be true in my own experience.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>Amara's Law:&nbsp;We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.</p>\r\n<p>Conway's Law: Any organization that designs a system will inevitably produce a design whose structure is a copy of the organization's communication structure.</p>\r\n<p>Gall's Law:</p>\r\n<p>A complex system that works is invariably found to have evolved from a simple system that worked. The inverse proposition also appears to be true: A complex system designed from scratch never works and cannot be made to work. You have to start over, beginning with a working simple system.</p>\r\n<p>Parkinson's law: Work expands so as to fill the time available for its completion.</p>\r\n<p>Law of the Instrument or Maslow's Golden Hammer: It is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail.</p>\r\n<p>Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law. (I've also heard this restated as \"Every task takes longer and costs more than originally estimated.\")</p>\r\n<p>Occam's razor &ndash; \"Entia non sunt multiplicanda praeter necessitatem.\"&nbsp;Literally, entities are not to be multiplied without necessity. When two explanations are offered for a phenomenon, the simplest full explanation is preferable. (Or in modern terms: Keep It Simple, Stupid!)</p>\r\n<p>Pareto principle &ndash; 80% of consequences stem from 20% of the causes.</p>\r\n<p>Schneier's law &ndash; Any person can invent a security system so clever that she or he can't think of how to break it.</p>\r\n<p>Sturgeon's law &ndash; Ninety percent of everything is crap.</p>",
+      "date_published": "2012-01-24T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 3,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 11,
+    "fields": {
+      "title": "Systems and Mental Deficiencies",
+      "slug": "systems-and-mental-deficiencies",
+      "status": "usable",
+      "site": 1,
+      "description": "On mindfulness and the following of rules to make a better life.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>I was surprised when I read some of the things writer Terry Pratchett wrote or said about developing PCA, a form of dementia. I cannot now find the original source that I read, but there are several similar articles. He described some symptoms of the disease slowly robbing him of his own mind. The inability to see certain objects when they are right in front of you. Walking into a room but having no memory of why you went there in the first place. Difficulty comprehending written text despite recognizing every letter and word. Difficulty recognizing people's faces.</p>\r\n<p>I was surprised when I read this, because these \"symptoms\" have affected me, well, pretty much my whole life. I thought they were normal.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>Since I was a child, I have had these problems. Until I have met people many times, I may have difficulty recognizing or remembering them. Sometimes I put something down, and then simply cannot find it again, despite the fact that neither I nor the object have moved at all. I stopped reading books on paper years ago because I just couldn't manage to read one through; I would get distracted in the middle of a paragraph and forget what I was reading. And as for walking into a room and forgetting why you're there? Hardly a day passes without such an event in my life. Sometimes I return to the room two or three times before I manage to complete the task I set out to do. Sometimes I&nbsp;<em>never</em>&nbsp;remember what I was planning to do.</p>\r\n<p>Part of my obsession with systems is the result of this bizarre array of mental quirks that I have slowly realized are not entirely \"normal\" (whatever that means).&nbsp;Systems are a simple set of rules that I can keep in my head. Lapses in memory become less important when the system is in operation.</p>\r\n<p>Ever lost your car keys? It's bad enough when you can't remember where you left them. It's doubly bad when you can be staring right at them and not&nbsp;<em>see</em>&nbsp;them. (My family calls this quirk \"object-blindness\" and it drives them crazy. \"Why did you put away every dish in the kitchen&nbsp;<em>except that one</em>?!\" I didn't see it!)</p>\r\n<p>I no longer have to remember where I left my car keys; the rule says that keys are by the door. If I forget where I left them, I can remember the rule. If I notice them sitting somewhere else (which is rare), I move them into compliance with the rule. When I'm about to put them down, I remember the rule, and I put them by the door. One consistent rule to be applied in all situations. A rule that doesn't even have to be remembered, because it can be derived again and again. (What's the best place to leave the keys? What's the first place I&nbsp;<em>could</em>&nbsp;put them down after entering the house?)</p>\r\n<p>I live my life by rules like this. I have a system for&nbsp;<em>everything</em>&nbsp;I do. A system for packing my laptop bag to be sure I don't forget anything. A system for loading the dishwasher. A system for making breakfast. It sounds ridiculous, but I have rules for all these things so that I don't have to rely on my memory to get them right.</p>\r\n<p>The most important element of my life systems is an attitude I learned only in the most recent quarter of my life, a skill Buddhists describe as&nbsp;<em>mindfulness</em>. Mindfulness means being fully present, in the moment. It releases you from remembering the past or worrying about the future and focuses your attention on the present, the here and the now. Mindfulness is what enables me to obey the rules&nbsp;<em>now</em>, as I perform the actions which later may confound me. It is what allows me to&nbsp;<em>think</em>&nbsp;when I put my keys down and observe the rule of where to place them.</p>\r\n<p>By knowingly placing my keys by the door where they belong, I ensure that later I can find them again.&nbsp;By paying attention to my actions in the present, I ensure success in the future.</p>",
+      "date_published": "2012-04-29T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 3,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 12,
+    "fields": {
+      "title": "A Framework for Innovation",
+      "slug": "a-framework-for-innovation",
+      "status": "usable",
+      "site": 1,
+      "description": "How does a large company create an environment that encourages and leverages internal innovation? Here is my checklist of prerequisites for \"enterprise\" innovation.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>How does a large company create an environment that encourages and leverages internal innovation? Here is my checklist of prerequisites for \"enterprise\" innovation:<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p><strong>Great people.</strong>&nbsp;You may think this goes without saying, but it cannot be emphasized enough. You cannot hire drones who put in 8 hours for a paycheck and then head out the door. You need passionate, creative people, people who love their work, people who are impatient with \"getting by\" and want to be the best at what they do. These are the Innovators. Without them, innovation does not happen.</p>\r\n<p><strong>A clear vision.</strong>&nbsp;Innovation happens at the edges. It is not a top-down directed process, it is an organic, bottom-up growth. In order for the innovators at the edge to produce innovations that are relavent to the business, top management must articulate and communicate a clear vision for the direction of the company. If the innovators can see the direction, they will innovate in that direction and get you there faster. If not, they will innovate in random directions, and you won't get the full benefit of innovation. A clear vision is the difference between innovation and distraction.</p>\r\n<p><strong>Spare capacity.</strong>&nbsp;Innovation is experimentation. Innovators need time to experiment, and they won't have that if 100% of their time is allocated to executing your current plan. This is the hardest thing for top managers to accept, but it is absolutely essential. You need slack time, or there simply will not be any innovation. Allocate one slice of your capacity for executing the plan. Reserve a second slice for unplanned work and process improvements. Allocate a third slice explicitly to innovation. The relative size of the slices will be entirely dependent on your own business and your desired outcome. My personal preference is 50/30/20.</p>\r\n<p><strong>Freedom to make decisions.</strong>&nbsp;Innovators by definition have to make decisions, make changes, form partnerships, and allocate resources from the pool of spare capacity. If permission is required to accomplish these things, then innovation will be quashed before it can succeed.</p>\r\n<p><strong><em>Accessible</em>&nbsp;Business Intelligence.</strong>&nbsp;If you are going to give innovators permission to make decisions, you&nbsp;<em>must</em>&nbsp;give them the information and tools they need to fuel decision making. Innovators need transparent access to customer data, product data, sales data, cost data. Without it, they are shooting in the dark, and the chances of success are low. Innovators also need easy access to tools for gathering their own data, for evaluating experiments and measuring success vs. failure.</p>\r\n<p><strong>Freedom to fail.</strong>&nbsp;Innovation is experimentation, and experiments, by their nature, do not always have the expected outcome. When Innovators exercise their power to make decisions, some of the decisions will be wrong ones. Innovators need to feel secure that they will not be punished for taking a chance if it doesn't work out. Remember, these folks are corporate employees, not risk-taking&nbsp;entrepreneurs. They don't stand to make millions if their innovation succeeds, so they shouldn't have to give up their health coverage and pension if it doesn't. Make it clear that failure is a learning opportunity, not a firing offense.</p>\r\n<p>The above are a few requirements for fostering innovation in large companies. Ultimately, innovation only happens where the culture supports it. Managers at all levels build company culture through their hiring and firing practices first, and management styles second. If your managers fear the new and different, your culture will never innovate. Ensuring the above factors at all levels of the organization should help to unchain your hidden innovation potential.</p>\r\n<p>What's missing from this list? How does your company encourage (or discourage) innovation?</p>",
+      "date_published": "2012-05-14T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 2,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 13,
+    "fields": {
+      "title": "How to set up a new PC in 12 Steps, or How I spent my evening renewing my disgust with Windows",
+      "slug": "how-to-set-up-a-new-pc-in-12-steps-or-how-i-spent",
+      "status": "usable",
+      "site": 1,
+      "description": "On the pain if setting up a new PC.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>Step 1: Spend 30 minutes unpacking boxes, peeling plastic, and connecting cables.</p>\r\n<p>Step 2: In breathless anticipation, press the power button.</p>\r\n<p>Step 3: Spend another 30 minutes hunting for the Windows Product Key so you can access the computer you just bought. Find it, finally, on an indelible sticker on the far side of the computer's case.</p>\r\n<p>Step 4: Enlist an assistant to type the Windows Product Key while you hang upside down under the desk using a flashlight to read it out.</p>\r\n<p>Step 5: Insert CD to install hardware drivers, because Windows does not know how to use the network card in your PC.&nbsp;&nbsp;Try to convince Windows that you know what you are doing and yes, you really want to run that program from the CD.</p>\r\n<p>Step 5b (optional): Wonder at how Windows has not only failed to improve, but has actually gotten worse in the 10 years since you last bought a PC.</p>\r\n<p>Step 6: Using a clunky-looking \"wizard\" from the CD, attempt to connect to wireless network. Be unable to find your wireless access point in the list because you live in a crowded apartment building, and the list is sorted randomly rather than by signal strength or even alphabetically. Notice that the list has multiple pages, and advance to page two. There it is.</p>\r\n<p>Step 7: Enter password for wireless access point. Curse in frustration when it fails to connect. Blush with embarrassment when you realize CAPSLOCK is on. Turn CAPSLOCK off and try again.</p>\r\n<p>Step 7b (optional): Curse the inventor of the CAPSLOCK key.</p>\r\n<p>Step 8: Start Internet Explorer. Type \"google.com/chrome\" into the location bar to download a real browser. Try to convince Windows that you know what you are doing and yes, you really want to run that program.</p>\r\n<p>Step 9: Sign into Google Chrome. All extensions and bookmarks are automatically synced. Awesome.</p>\r\n<p>Step 10: Using Google Chrome, visit www.ubuntu.com and download the Windows Installer to install a real operating system.&nbsp;Try to convince Windows that you know what you are doing and yes, you really want to run that program.</p>\r\n<p>Step 11: Let the installer reboot into Linux. Be amazed at how all the hardware is recognized immediately, including the wireless card. Feel like Ubuntu just gave you a warm hug when the wireless network manager pops up on the screen and offers to connect you to your very own wireless access point if you will be so kind as to enter the password. Check to ensure CAPSLOCK is off. Enter password.</p>\r\n<p>Step 12: Click \"Install Updates\" when the update manager offers to do so. Wait.</p>\r\n<p>Step 12a (optional): Write a blog post about your experience while waiting for updates to download. Feel sorry for people who have not yet discovered Linux.</p>",
+      "date_published": "2012-10-10T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 3,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 14,
+    "fields": {
+      "title": "Getting Things Done -- Productivity System",
+      "slug": "getting-things-done-productivity-system",
+      "status": "usable",
+      "site": 1,
+      "description": "Applying the Getting Things Done system to a digital lifestyle.",
+      "share_image": 1,
+      "base_template": "",
+      "content_template": "commoncontent/blocks/article_featuredimage.html",
+      "body": "<p>David Allen's&nbsp;<a href=\"http://www.amazon.com/gp/product/0142000280/ref=as_li_ss_tl?ie=UTF8&amp;tag=controlescape-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0142000280\">Getting Things Done: The Art of Stress-Free Productivity</a>&nbsp;is a phenomenon in the tech community. If you're reading this blog, you've probably already read the book, or at least know something about the productivity system that it defines. I read it years ago, but like many readers never put into practice more than a tiny portion of the system.</p>\r\n<p>As 2012 drew to a close and I looked back on all the things I meant to accomplish, I decided that I should give this productivity bible another look, in the hopes of getting more things done in 2013. I won't bother to summarize the system that David Allen defines. The book is very readable and does a much better job than I could. Instead, I'm just going to note how I decided to apply the principles of his system in my own life, especially given the changes in technology and lifestyle since the book was originally published a dozen years ago.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>Some essential elements of the GTD system include:</p>\r\n<ul>\r\n<li>one or more inboxes (as few as you can get away with),</li>\r\n<li>a calendar,</li>\r\n<li>a \"tickler\" file to remind yourself of tasks that can only start at some future date,</li>\r\n<li>a place to organize your reference material, and</li>\r\n<li>a tool for organizing lists of projects and tasks.</li>\r\n</ul>\r\n<p>The original GTD system was developed in a paper-focused world, before cloud-based calendars and Internet-connected phones became the norm. I've worked really hard to eliminate the mountains of paper in my life, so I have no interest in buying filing cabinets and manila folders.</p>\r\n<p>The vast majority of things I need to manage in my own life are actually digital. Email, digital music, more email, PDF downloads, email again, digital pictures, and did I mention the email?&nbsp;Digital references take up far less space, are easier to move, and are full-text searchable. I quickly resolved that my organization system would be digital, not physical.</p>\r\n<p>As I had already begun to use it for scribbling notes I wanted to keep track of, I decided to do the simplest digital thing that could work for staying organized, and elected&nbsp;<a href=\"https://evernote.com/\">Evernote</a>&nbsp;as my default tool.</p>\r\n<p>Evernote gives me myriad advantages over a paper-based system.</p>\r\n<ul>\r\n<li>It's a great place to jot down random notes (replacing a physical notepad). It can even create notes from pictures or voice recordings, making it even easier to capture everything.</li>\r\n<li>The option to use notebooks and/or tags to organize notes, and its full-text search capability, make it an excellent reference database (replacing the filing cabinet).</li>\r\n<li>It runs on my phone, so it's always with me (no need to carry a paper organizer or notepad).</li>\r\n<li>It magically synchronizes with both my work computer and my home computer, so I never have to switch contexts to access it.</li>\r\n</ul>\r\n<p>Setting up Evernote to work with my system was dead simple. I renamed the default notebook to \"INBOX.\" Any random notes I capture are there, waiting to be processed when next I process my inboxes. I created a Projects stack, containing a notebook for each large project, and a \"Miscellaneous\" notebook with a separate note for each smallish project. A Reference stack contains various notebooks organized by topic where I can file informational notes, PDF or Word documents, photos of the whiteboard scribbles from a brainstorming session, or any other assets I need to keep around.</p>\r\n<p>With a physical inbox, Allen recommends dealing with things that won't fit into it by writing a reminder of them on a piece of paper and placing the paper in the inbox. Since my inbox is digital, physical things won't fit into it. So if I need a reminder of a physical thing, I snap a picture of it with my phone and add it to my Evernote inbox. I also file away papers by scanning them or taking a picture with my phone (and then trashing/recycling the physical paper).</p>\r\n<p>Allen recommends keeping a list with all your \"next actions\" on it. I have become accustomed to visualizing work using a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Kanban_board\">kanban</a>&nbsp;system, so instead of a \"next actions\" list, I have a notebook called Backlog containing a note for each task, and another called WIP that contains notes for the tasks I am currently working on. When completed, I move them to the Done notebook. During my weekly review of open projects, I determine the next actions for each project and add a note for each one to the Backlog.</p>\r\n<p>GTD recommends keeping an agenda list for every regular meeting you have, so that you never have to be embarrassed that you forgot to ask Bob about that one thing when you spoke with him this morning. I keep an Agenda notebook in Evernote, with a separate note for each person or group I speak to regularly. If I run into someone in the hallway, I can whip out my phone and access their agenda immediately. Any notes generated from the meeting go back into the inbox to be processed.</p>\r\n<p>Since most of my reading is also digital, I use&nbsp;<a href=\"https://getpocket.com/\">Pocket</a>&nbsp;(formerly Read It Later) as my Reading list. I do a lot of my reading in the moment as a less-than-two-minute task, but when I need to queue something up, I toss it into Pocket. I am finding, however, that my appetite for reading later is a bit more ambitious than the amount of time \"later\" actually affords me. Perhaps I need to work on this.</p>\r\n<h1>GTD Patterns I Don't Apply</h1>\r\n<p>GTD recommends keeping your Next Action list organized by Context: Things you can do at home, at work, at the phone, etc. I found organizing by context to be almost useless, because almost all my tasks can be performed in any context. My work is all digital, and my work computer is a laptop I bring home with me at night. In a pinch, most of my work could performed on my phone. I always have a phone in my pocket, so there's no need for a \"calls\" context, I can make calls from anywhere. Most of my home activities are habits rather than tasks (take out trash, wash clothes, etc.) and therefore do not need to be tracked.</p>\r\n<p>I don't have a \"Waiting For\" notebook for tracking delegated tasks. Instead, I place a reminder on my calendar to follow up on a certain date if the awaited item has not arrived in my inbox by then. I also make \"appointments\" blocking out time to complete important tasks, otherwise there is a risk that my schedule will fill up and leave no time, or that I will get distracted by the in-the-moment work, leaving important things too late.</p>\r\n<p>My calendar is already digital and synchronized across my devices. I use the Exchange calendar provided by my company, but I could just as easily use a synchronized iCloud or Google Calendar.</p>\r\n<p>Finally, I decided that the tickler file was really an artifact of the paper world where a calendar is a sheet of paper with little boxes drawn on it. You can't file papers in those little boxes, so you need those 43 folders to store date-specific items. In my all-digital world, if I need to be reminded of something on a certain date, I can just drop it onto my digital calendar and store it there, or at worst store a link to some other repository. So I don't have a tickler notebook in Evernote, instead I use my calendar directly to fill that role.</p>\r\n<p>I'm just getting started using and tweaking this system, and I'm sure it will evolve over time. Perhaps I will write a follow-up post in a few months to record how it has changed and how effective it has been.</p>",
+      "date_published": "2013-01-13T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 3,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 15,
+    "fields": {
+      "title": "Systems vs Habits: Why GTD Often Fails",
+      "slug": "systems-vs-habits-why-gtd-often-fails",
+      "status": "usable",
+      "site": 1,
+      "description": "Good habits are a way to automate your behavior the way irrigation ditches automate watering. They allow you to accomplish work without effort. But if you don't have them already, good habits can be hard to form.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>In my&nbsp;<a href=\"http://vince.veselosky.me/2013/01/getting-things-done-productivity-system.html\">previous post</a>, I wrote about David Allen's&nbsp;<a href=\"http://www.amazon.com/gp/product/0142000280/ref=as_li_ss_tl?ie=UTF8&amp;tag=controlescape-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0142000280\">Getting Things Done</a>&nbsp;book and productivity system. If GTD has a weakness, it is that, although the book describes the system very well, it does a poor job of describing the change of daily habits you'll have to perform if you&nbsp;really&nbsp;want to implement the system.&nbsp;The major reason people fail at implementing a GTD-style productivity system in their lives is that, no matter how simple the system may be, it's a big change from what they are used to.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>Leo Babauta is a self-made expert in changing and forming habits. His&nbsp;<a href=\"http://zenhabits.net/\">Zen Habits blog</a>&nbsp;has changed the lives of many of its readers. So when I decided to try getting organized once again, there were two books on my reading list: David Allen's (the System), and Leo Babauta's&nbsp;<a href=\"http://www.amazon.com/gp/product/B001970HQU/ref=as_li_ss_tl?ie=UTF8&amp;tag=controlescape-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B001970HQU\">Zen To Done</a>, Leo's personal take on productivity.</p>\r\n<h2>On Habits and Willpower</h2>\r\n<p>I like to think of habits as irrigation ditches.</p>\r\n<p>If you are a farmer who wants your fields watered, the obvious thing to do is to go get some water. But carrying buckets of water from the well to your field is inefficient and places a low upper limit on the amount of crop you can grow effectively. The effective farmer instead spends his effort digging irrigation ditches. It's exhausting work, and at first it seems to generate no benefit at all. But once the ditch is complete, the water flows naturally into your fields on its own, without effort.</p>\r\n<p>Good habits are a way to automate your behavior the way irrigation ditches automate watering. They allow you to accomplish work without effort. But if you don't have them already, good habits can be hard to form.</p>\r\n<p>As humans, we have a natural aversion to change. The world and activities that we are comfortable with got us this far, so they must be good, right? Change might make things worse. So if your bar for success is mere survival, aversion to change is probably a good thing. That's why change makes us uncomfortable. It's instinctive.</p>\r\n<p>Each of us has a limited ability to tolerate change. Too much change makes us too uncomfortable, and we start to squirm, trying to avoid the change, to get back in our comfort zone. The uncomfortable feeling we get from too much change we call \"stress\".&nbsp;When we're trying to affect change, we call the ability to tolerate it \"willpower\".&nbsp;But this is misleading, because willpower must also be expended to tolerate change that comes from the outside, change that we don't want.</p>\r\n<p>Remember Steve McCroskey from&nbsp;<a href=\"http://www.amazon.com/gp/product/B001K37CT8/ref=as_li_ss_tl?ie=UTF8&amp;tag=controlescape-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B001K37CT8\">Airplane!</a>,&nbsp;the guy who picked the wrong week to quit smoking? Too much change, he ran out of willpower.</p>\r\n<p>Habits are a way to acclimate yourself to a new condition or activity, so that you stop seeing it as stressful change and start seeing it as normal.</p>\r\n<h2>Habits and Productivity</h2>\r\n<p>GTD asks you to master five classes of activity:</p>\r\n<ul>\r\n<li>Collect (everything in an Inbox, as few as possible)</li>\r\n<li>Process (Empty the Inbox, Make decisions about where items go)</li>\r\n<li>Organize (File and Schedule items &amp; tasks)</li>\r\n<li>Review</li>\r\n<li>DO</li>\r\n</ul>\r\n<p>But the GTD system itself doesn't tell you&nbsp;<em>how</em>&nbsp;to master these activities. For most people, mastering these activities means forming at least 4 new habits. For others it may require dozens of new habits to master them. But forming habits requires willpower, and we only have so much of that. The result is that many people trying to implement the system as a whole feel overwhelmed by the change, and stop.</p>\r\n<p>Zen To Done is a short ebook (there's also a&nbsp;<a href=\"http://www.amazon.com/gp/product/1438258488/ref=as_li_ss_tl?ie=UTF8&amp;tag=controlescape-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1438258488\">paperback</a>) that describes ten habits you can adopt to become fully productive.&nbsp;If even ten habits sounds daunting and unachievable to you, don't worry, Babauta has you covered. He describes a minimalist system that will yield major improvements in productivity consisting of just four habits: Collect, Process, Plan, and Do.</p>\r\n<p>Babauta's approach to productivity is the same as his approach to self-improvement. Break down the desired change into a set of behaviors or habits, and tackle each habit one at a time before moving on to the next. He has some quick tips and tricks in the book to help you form these habits, but if you want to go deeper, you should probably read his other book,&nbsp;<a href=\"http://www.amazon.com/gp/product/1401309704/ref=as_li_ss_tl?ie=UTF8&amp;tag=controlescape-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1401309704\">The Power of Less</a>, or page through the great free content on his blog Zen Habits.</p>\r\n<p>You should buy and read Zen To Done. It's cheap, it's an easy read, and it may help you to make the changes you want in your life. But if you don't, here's some friendly advice inspired by Babauta.</p>\r\n<p>Give yourself permission to move slowly. Focus on just one habit, until that one habit is mastered. This means there are several other habits in your queue that are not \"done\" yet. You have to be okay with that. You have to accept that first things come first, and trust that those other things&nbsp;<em>will</em>&nbsp;get done. But for now, you must focus on the one thing you have chosen. Remember, you aren't watering the fields quite yet. You are still digging ditches.</p>",
+      "date_published": "2013-01-18T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 3,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 16,
+    "fields": {
+      "title": "Take heed, managers: your 'best practices' are killing your company",
+      "slug": "take-heed-managers-your-best-practices-are-killing",
+      "status": "usable",
+      "site": 1,
+      "description": "To move the needle on organizational productivity, you need to focus on the process by which your company produces value, and constantly improve that process.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>If you are a manager, you&nbsp;<em>need</em>&nbsp;to understand the ideas of&nbsp;<a href=\"http://www.amazon.com/W.-Edwards-Deming/e/B000APR1PW/?_encoding=UTF8&amp;tag=controlescape-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957\">W. Edwards Deming</a>. Deming wrote several books about management, in which he chastised American business schools and American corporate management for perpetuating a failed philosophy and failed management techniques.</p>\r\n<p>Deming proposed a new philosophy of management motivated by quality and grounded in systems theory. The Deming philosophy is too deep, too broad, and too rich to be explained in a mere blog post. Volumes have been written about it, and as I read those volumes I am sharing my thoughts through this venue (with apologies to Mr. Deming if I misrepresent anything, I am still learning.)<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>Probably the best introduction to Deming and his theories is his Red Bead Experiment. The experiment is detailed in Chapter 7 of his book,&nbsp;<a href=\"http://www.amazon.com/gp/product/B004ZK8RTM/ref=as_li_ss_tl?ie=UTF8&amp;tag=controlescape-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B004ZK8RTM\">The New Economics for Industry, Government, Education</a>. The experiment is extremely educational, and I highly recommend you watch it play out in the video below (you&rsquo;ll need about an hour).</p>\r\n<p><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/HBW1_GhRKTA\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\r\n<p><a href=\"https://www.youtube.com/watch?v=HBW1_GhRKTA&amp;list=PLqhO2GMDXDYPuCQh-OsPNV9EBimhPBMAZ\">Deming's Red Bead Experiment</a></p>\r\n<p>In case you haven&rsquo;t the time to watch the video version, here is the one paragraph summary of the Red Bead Experiment.</p>\r\n<p>The experiment simulates a company, the White Bead Corporation, whose job is to ship white beads to its customers. Several employees are recruited from the audience, including line workers and quality control workers. Workers are presented with a box containing 3,200 small white beads, and 800 red beads of the same size. They are given a tool to extract beads from the box 50 at a time, and strict instructions on how to carry out their task of &ldquo;making&rdquo; white beads. They use the tool as instructed, then report each batch to quality control for inspection, where the number of defects (red beads) is recorded. The foreman (the instructor) tries several management techniques to improve the performance of his workers: he puts up motivational posters, sets numerical goals, introduces pay incentives, conducts individual performance reviews, and finally lays off the poorest performers. In the end, the company goes out of business because it cannot meet customer demand for defect-free white beads.</p>\r\n<p>Now, observers of this experiment can see that the game is rigged. The workers are destined to fail, and that is precisely the point that Deming is trying to make to the managers.</p>\r\n<p>&ldquo;Apparent performance is actually attributable mostly to the system that the individual works in, not to the individual himself,&rdquo; Deming wrote. Despite the fact that there were observable differences between the output of individual workers, those differences were entirely the result of&nbsp;<em>common cause</em>, that is, the variation is inherent to the system itself. All the efforts spent trying to improve the individual performance of the workers is wasted, because the flaw is not in their performance, but in the system under which they work.</p>\r\n<p>Deming warns, &ldquo;Instead of setting numerical quotas, management should work on improvement of the process.&rdquo; As a manager, it is your job to understand the difference between&nbsp;<em>special causes</em>&nbsp;that should be remedied individually, and&nbsp;<em>common causes</em>&nbsp;that can only be eliminated with a change to the system itself. And as a manager, the system is&nbsp;<em>your</em>&nbsp;responsibility, not to be delegated.</p>\r\n<p>Deming describes how numerical quotas and incentive are not only useless, but actually counter-productive. He gives several examples where workers may report misleading figures, or make poor business decisions that game the system so that the numbers work out. A grocery manager accountable for inventory pulls cashiers to audit a delivery while paying customers wait in line. He stops stocking certain items that move slowly and might spoil on the shelf, forcing customers to shop elsewhere for those items. &ldquo;He knows 55 other ways to help to meet his allowance of 1 percent shrinkage, all of which hurt the business. Can anybody blame him for living within his allowance?&rdquo;</p>\r\n<p>Listening to Deming, you have to conclude that those annual performance reviews you conduct as a manager are aimed in the wrong direction. Performance of your employees is not a result of the employee&rsquo;s competence, but of the manager&rsquo;s competence to build a system in which they can be productive. If your employees are not performing up to standards, you as a manager need to ask yourself what&nbsp;<em>you</em>&nbsp;are doing wrong. What changes must be made to the&nbsp;<em>process</em>&nbsp;of your business to make these employees productive? Ask them, they can probably tell you several, because they actually want to achieve, and they can see what parts of the system are holding them back.</p>\r\n<p>Incentive programs and performance reviews are considered management &ldquo;best practices&rdquo; and this is why Deming chastised American managers. These practices simply don&rsquo;t produce the results managers are looking for. Have you ever had a performance review or bonus program result in an order of magnitude increase in productivity? Never. At best, you&rsquo;ll squeeze out a few percentage points. At worst, you make your employees feel micro-managed and powerless, removing all desire they may have to improve.</p>\r\n<p>To move the needle on organizational productivity, you need to focus on the&nbsp;<em>process</em>&nbsp;by which your company produces value, and constantly improve that process.</p>",
+      "date_published": "2013-01-22T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 2,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 17,
+    "fields": {
+      "title": "Martin Luther King Jr. Day",
+      "slug": "martin-luther-king-jr-day",
+      "status": "usable",
+      "site": 1,
+      "description": "People like Dr. King are the most important people in America, people who serve as a national conscience, who remind us of the ideals we aspire to, and insist that we try harder to live up to them.",
+      "share_image": 2,
+      "base_template": "",
+      "content_template": "commoncontent/blocks/article_featuredimage.html",
+      "body": "<p>As I write this, I sit in an apartment in Atlanta&rsquo;s Old Fourth Ward, just a few blocks from where the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Martin_Luther_King,_Jr.\">Rev. Dr. Martin Luther King Jr.</a>&nbsp;preached to his congregation. I cannot express in words the gratitude I feel toward Dr. King and all the thousands of people who marched with him to demand equal rights for all Americans. Since its birth, America has been a nation that aspired to high ideals of equality, and since its birth, America has struggled and failed to live up to those ideals. People like Dr. King are the most important people in America, people who serve as a national conscience, who remind us of the ideals we aspire to, and insist that we try harder to live up to them. Dr. King made us better as a nation.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>As the events of 2014 made painfully evident, although segregation and racism are no longer the law of the land, they often remain ingrained in the structure of our society. Too many people of color continue to struggle for fair treatment and fair opportunities. We have a long way to go, and a lot of work to do, before we can say we are living up to our American ideals.</p>\r\n<p>But growing up, as I did, in the South during the 1970s, attending elementary school in the recently desegregated school system, I learned what a huge impact a few dedicated people can have on society and culture. The cultural difference between the older generation segregationists and the children who were educated in integrated schools was nothing short of stunning to me. While racial prejudice has not disappeared from our culture, that early experience gives me hope that it really can.</p>\r\n<p>The Martin Luther King Jr. Holiday was&nbsp;<a href=\"http://www.gpo.gov/fdsys/pkg/STATUTE-98/pdf/STATUTE-98-Pg1473.pdf\">set aside</a>&nbsp;to &ldquo;serve as a time for Americans to reflect on the principles of racial equality and nonviolent social change espoused by Martin Luther King, Jr.&rdquo;</p>\r\n<p>More than a mere day of reflection, the King holiday has evolved into a national day of service toward the realization of&nbsp;<a href=\"https://www.youtube.com/watch?v=smEqnnklfYs\">his great dream</a>. The video below explains the King legacy of service, and how you can honor his memory and your community through service.</p>\r\n<p><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/PUdPxEn4vnM\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\r\n<p><a href=\"https://www.youtube.com/watch?v=PUdPxEn4vnM\">MLK Day Legacy of Service</a></p>\r\n<p>Dr. King was a great orator, and although his written words are powerful, I don&rsquo;t believe you can truly understand the power of those words unless you have heard them as he spoke them. It was not merely the words, but the passion of his presentation, that motivated everyday people to extraordinary action during the civil rights era. I believe everyone should take the time on Martin Luther King Jr. Day to listen to the man speak.</p>\r\n<p>If you have children, you owe it to them to teach them about Dr. King, about the struggle for racial equality, and about the nonviolent methods he used to create such great change. If we are going to make this world a better place for all of us, we need Dr. King&rsquo;s leadership and ideals to live on in future generations.</p>\r\n<p>Here are some places to hear Dr. King speak.</p>\r\n<ul>\r\n<li><a href=\"https://www.youtube.com/watch?v=smEqnnklfYs\">&ldquo;I Have A Dream&rdquo; address to the 1963 March on Washington</a>&nbsp;(YouTube) &mdash; A must-see.</li>\r\n<li><a href=\"http://www.amazon.com/gp/product/B00005AASL/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00005AASL&amp;linkCode=as2&amp;tag=mindvessel-20&amp;linkId=7A45BEMX3BIBEUUZ\">A Call to Conscience: The Landmark Speeches of Dr. Martin Luther King, Jr.</a>&nbsp;(Amazon) &mdash; This audio book contains recordings of Dr. King&rsquo;s key speeches, with introductions from other giants of the civil rights movement. It&rsquo;s very inexpensive. Unfortunately, at the time of this writing the&nbsp;<a href=\"http://www.amazon.com/gp/product/B000Q9IN8G/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B000Q9IN8G&amp;linkCode=as2&amp;tag=mindvessel-20&amp;linkId=2OGDA3TMVKQMN5ZZ\">Kindle edition</a>&nbsp;is not available with Whispersync, so I recommend the&nbsp;<a href=\"http://www.amazon.com/gp/product/B00005AASL/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00005AASL&amp;linkCode=as2&amp;tag=mindvessel-20&amp;linkId=7A45BEMX3BIBEUUZ\">audio edition</a>.</li>\r\n<li><a href=\"http://www.amazon.com/gp/product/B0000547LK/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B0000547LK&amp;linkCode=as2&amp;tag=mindvessel-20&amp;linkId=UU4UYPS3W6OAFBRA\">The Autobiography of Martin Luther King, Jr.</a>&nbsp;(Amazon) &mdash; This anthology edited by Clayborne Carson tells the story of Dr. King&rsquo;s life in his own words. The audio edition includes recordings of Dr. King himself where available, and is narrated by Levar Burton where no recording was available. Again the&nbsp;<a href=\"http://www.amazon.com/gp/product/B00EXUBXQS/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00EXUBXQS&amp;linkCode=as2&amp;tag=mindvessel-20&amp;linkId=EQWD7YDOHWYCE4RI\">Kindle edition</a>&nbsp;is not available with Whispersync, so I recommend the&nbsp;<a href=\"http://www.amazon.com/gp/product/B0000547LK/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B0000547LK&amp;linkCode=as2&amp;tag=mindvessel-20&amp;linkId=C54ZMJRHFTTPRKNT\">audio edition</a>.</li>\r\n</ul>",
+      "date_published": "2015-01-19T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 3,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 18,
+    "fields": {
+      "title": "How I Get 152 Miles per Gallon in the City",
+      "slug": "how-i-get-152-miles-per-gallon-in-the-city",
+      "status": "usable",
+      "site": 1,
+      "description": "Density and public transit make urban life far more sustainable than the suburban alternative. Save the planet, move into the city!",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>How good is the mileage on your car? I just did the math, and I travelled 2,288 miles in the past 4 months on 15 gallons of gas, so I&rsquo;m getting 152 mpg. And I don&rsquo;t even drive a hybrid!</p>\r\n<p>How is that even possible? Here&rsquo;s how I did it.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>My last fuel purchase, according to my financial records, was on October 17th 2014. Today is February 7th 2015. I put 15 gallons of gas in my car today. Every time I fuel up, I set my trip counter so I can calculate my mileage at the next fuel up. I have driven 245 miles since my last fuel purchase 113 days ago.</p>\r\n<p>&ldquo;Wait,&rdquo; you&rsquo;re probably saying, \"you haven&rsquo;t bought gas in 113 days? I fill my tank every week! What are you trying to pull here?&rdquo;</p>\r\n<p>It&rsquo;s simple, friends. You see, I live in the city. My home is walking distance to public transit, and I ride the train to work every day instead of driving. My home is also walking distance to the grocery store, pharmacy, local restaurants, dry cleaners, and almost everything else I need. So I almost never drive my car.</p>\r\n<p>According to the app on my (allegedly smart) phone, I have walked an average of 3.4 miles per day over the last 4 months. Multiply by 113 days, and we find that I have walked 384.2 miles since my last fuel up. That&rsquo;s about 50% more walking than driving.</p>\r\n<p>During that 113 days were some holidays, some vacation time, and a few work-from-home days, so I commuted to work and back 58 times. The distance between the two train stations, if I drove it, would be 14.3 miles. So at 28.6 miles per day, I commuted 1658.8 miles getting to work and back by train.</p>\r\n<p>That&rsquo;s 245 miles driving, 384.2 walking, and 1,658.8 by train for a total of 2,288 miles on 15 gallons of gas, or 152.5 miles per gallon.</p>\r\n<p>So if you think urban living is bad for the environment, think again. Density and public transit make urban life far more sustainable than the suburban alternative. Save the planet, move into the city!</p>",
+      "date_published": "2015-02-09T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 3,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 19,
+    "fields": {
+      "title": "A New Mission for Media",
+      "slug": "a-new-mission-for-media",
+      "status": "usable",
+      "site": 1,
+      "description": "Focus on the essential mission of the media, to facilitate the flow of information to the point of its highest value, and never stop asking how you can better serve your audience. Do this, and you will turn your foundering media business into a rapidly growing information services company.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<blockquote>\r\n<p>Facilitate the flow of information to the point of its highest value.</p>\r\n</blockquote>\r\n<p>The media industry at large has lost its path. Most media companies are heavily tilted toward media as entertainment, rather than media as information. As a result, they are engaged in a digital race to the bottom, where falling ad CPM drives them to seek higher page view numbers on thinner margins, focusing on quantity rather than quality, on usage rather than utility. This has left a huge,&nbsp;<a href=\"https://www.blueoceanstrategy.com/\">blue ocean</a>&nbsp;of market opportunities in focused information services open to software and technology companies, who are growing at exponential rates while traditional media companies struggle to slow the rate at which their business is shrinking. Media businesses can stop drowning and start growing again if they recognize and adopt the mission statement above, the mission that media organizations have always had.</p>\r\n<p>As a media organization, your mission is to facilitate the flow of information to the point of its highest value.</p>\r\n<p>That doesn&rsquo;t just mean its highest value to you, the business, but the highest value over all to the community you serve.&nbsp;<a href=\"https://vince.veselosky.me/media/journalism-too-important-to-be-locked-up.html\">Journalism can be seen as a fulfillment of this mission</a>, because information about corporate malfeasance or government activity has more value to society when it is in the hands of consumers or voters. But media organizations, and especially newspaper organizations, need to embrace the idea that news is more than just journalism, and media is more than just news.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>A perfect example of an information service that should have been, but was not, created by a media company, is&nbsp;<a href=\"https://www.waze.com/\">Waze</a>. Waze is a mobile application that feeds its users real-time traffic information and turn-by-turn directions. Now, media companies have been providing their users with traffic information for decades, even going to the expense of paying for aerial observation helicopters to monitor traffic conditions. They knew there was a market need there. They thought they were filling it. Then Waze came along and stole their thunder, because Waze gives users&nbsp;<em>exactly</em>&nbsp;the information they need, at the&nbsp;<em>exact</em>&nbsp;time that they need it, and that makes the information much more valuable to the consumer. The fact that you publish the same information on your web site or broadcast it over the radio is irrelevant. Waze provides that information at the point of its highest value. Waze is doing the job of a media company.</p>\r\n<p>Why didn&rsquo;t a media company invent Waze? In fact, why didn&rsquo;t&nbsp;<em>every</em>&nbsp;local media company across America re-invent it? It&rsquo;s certainly not because they didn&rsquo;t know about the market need. I think it&rsquo;s because they lost sight of their mission. They were thinking about attracting audiences to their products, when they should have been thinking about how to serve their audiences better. Had they been focused on facilitating the flow of information (rather than merely the flow of advertising dollars), they might have recognized the opportunity.</p>\r\n<p>The proliferation of personal, always-present, always-connected, location-aware mobile devices presents a&nbsp;<em>huge</em>&nbsp;growth opportunity for media businesses. More than ever before, it is now possible to deliver information to your audience at the exact time and place that it will have the most value.</p>\r\n<p>You, as a media business, should be brainstorming every day to find new situations where a specific person needs some specific information at some specific time, and crafting new products for those situations. Some of these products will be so valuable that your audience will pay for them. Some will be better suited to an ad-supported model. Still others may be sponsored by a single business or organization. Some may lend themselves to in-app purchase opportunities. By addressing the timely information needs of your audience, you open the possibility of multiple revenue streams. If you perform this brainstorming exercise, you will come up with many, possibly hundreds of ideas.</p>\r\n<p>It is your responsibility, media executives, to structure your business as a pipeline for testing and scaling these ideas. Train your audience development team in the latest (fastest and cheapest)&nbsp;<a href=\"https://www.usability.gov/what-and-why/user-research.html\">user research methods</a>. Train your product development team on the latest mobile and web technologies. Leverage the on-demand compute power of the cloud to reduce up-front capital outlays, quickly shut down experiments that don&rsquo;t pan out, and rapidly scale the ones that take off. Use application templates to shrink your time to first prototype. All of these are ways to reduce the cost and risk of testing new products.</p>\r\n<p>Get your assembly line running and don&rsquo;t let it stop. Ship a new app every quarter, then every month, then every two weeks. If they don&rsquo;t make a splash, no worries. It&rsquo;s a small investment, easy to write off. If they do hit, scale them up and leverage the new revenue streams.</p>\r\n<p>The key is to focus on the essential mission of the media, to facilitate the flow of information to the point of its highest value, and never stop asking how you can better serve your audience. Do this, and you will turn your foundering media business into a rapidly growing information services company.</p>",
+      "date_published": "2015-04-15T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 1,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 20,
+    "fields": {
+      "title": "The Tale of the Tail",
+      "slug": "the-tale-of-the-tail",
+      "status": "usable",
+      "site": 1,
+      "description": "For nearly twenty years, the most concise description of me was \"the guy with the really long pony tail.” This is the story of how it came to be, and why it is no more.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>For nearly twenty years, the most concise description of me was \"the guy with the really long pony tail.&rdquo; That&rsquo;s no longer the case, and I am frequently asked why. I find it curious that there is such a widespread assumption that a person needs a reason to change their hairstyle, but as it happens, I do have one. This is the story of how it came to be, and why it is no more.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>From 1989 to 1995 I was an active duty Marine, which meant that I wore my hair&nbsp;<em>very</em>&nbsp;short, and had it cut every single Friday. When I left the military, I found myself needing to make a decision about hair style for the first time in years. At the time, I had been reading a lot of Viking Sagas, and I was reminded of&nbsp;<a href=\"https://en.wikipedia.org/wiki/Harald_Fairhair\">King Harald Finehair</a>, who first united all the kingdoms of Norway. He received his epithet because he had sworn an oath not to cut his hair until he reigned over all of Norway, and he stuck by the oath for the ten long years it took him to achieve his goal. Being young and still somewhat foolish, I decided to make a similar romantic gesture. I would swear an oath not to cut my hair until&hellip;.</p>\r\n<p>In order to understand that oath, it might be helpful to understand my circumstances at the time. I was 25 years old, freshly discharged from the military after six years, two overseas deployments, and one war. My family was working class, with no assets to speak of, living from paycheck to paycheck, so there was really nothing for me to fall back on. The most important relationship of my life had just broken up. I was drifting, unsure where to go, or what job I should be looking for, or really just how to live in the world. I was working a dead-end job for well below the median income, and wondering if that was all I was worth. That high school I-can-do-anything confidence had now faded into the I-have-to-pay-the-rent real world, and the impedance mismatch was tearing at my soul. In short, I was miserable, lonely, lost, and broke.</p>\r\n<p>And so I swore an oath. I would not cut my hair&nbsp;<em>until I was satisfied with my life</em>. And I would tell no one what the goal actually was until it was achieved. Because talking about it was my litmus test. I didn&rsquo;t feel comfortable talking about how uncomfortable I was in my own skin, and in my own life. I knew as long as I felt that way, I would not have achieved my goal.</p>\r\n<p>At the time I swore that oath, I had a very naive vision of what it meant to be satisfied with one&rsquo;s life. I imagined myself independently wealthy, with washboard abs, thrilling women with my fabulous athletic body and intimidating men with my real estate portfolio and unshakeable self-confidence. I proceeded to work toward that vision with great vigor. And I became even more depressed.</p>\r\n<p>I settled in to daily life, merely trying to get by, that oath and the hair it spawned always right behind me, at the back of my head. Slowly, over the years, I found opportunities to grasp the things I had told myself were the brass ring. I found a career that I loved. My income steadily increased. I bought property. I dated women far more attractive than I deserved. I fell in and then out of love. Every time one of these milestones passed, I would ask myself, is this it? Is this the magic line where I become satisfied with my life? Every time I found that, having crossed the goal line, I felt no different about my life than I had before. Eventually, I just resigned myself to the idea that I would never get there, ever. And I stopped talking about my oath.</p>\r\n<p>Then came the crash. I lost my job. I lost my girlfriend. My favorite pet died tragically young. The world came crashing down around me, and I lost all hope. The despair of being unable to achieve, and of being unable to appreciate anything I did achieve, led to an emotional crisis. I even contemplated suicide. I&nbsp;<em>broke</em>&nbsp;in a spiritual and psychological sense.</p>\r\n<p>And when I did, my eyes opened. I saw, somehow for the first time, that I was not alone. I had friends around me who actually cared. Not many (because frankly I had been an insufferable jerk in my self-involved despair), but enough to have someone to talk to, someone to lean on. With the help of these friends I learned to see life from other perspectives. I came to understand what my life looked like from their point of view, and how they looked at their own lives. I discovered that everyone was just as lost as I was.</p>\r\n<p>One friend took me to church with her, and though I was not a Christian, I found solace and friendship there. Religion was not ultimately my path, but I gained immense insight by learning to see the world from their perspective. I learned to understand finally the concept of Faith, and the way God helps everyday people, not through miracles, but by helping to lift their emotional burdens.</p>\r\n<p>I began to study the Buddha Dharma, because it promised relief from&nbsp;<em>dukkha</em>, which is often translated as &ldquo;suffering&rdquo; but really encompasses a fundamental dissatisfaction in all things, and I felt this was an apt description of my inner state. I learned that the inner core of soul one identifies as &ldquo;self&rdquo; is an illusion we create, and that is why, no matter how we try, we can never reconcile it with the reality of our lives. I learned that all things are impermanent, and that our illusory &ldquo;self&rdquo; becomes attached to impermanent things. When those things change, as they must, the self suffers from the attachment. That suffering is&nbsp;<em>dukkha</em>&nbsp;and it is a condition of life.</p>\r\n<p>I also learned about&nbsp;<a href=\"https://en.wikipedia.org/wiki/Impostor_syndrome\">Imposter Syndrome</a>, and thereby discovered how very common it is for someone to achieve &ldquo;success&rdquo; yet be unable to feel successful. More and more I learned that my own experience was merely The Human Experience.</p>\r\n<p>To turn a cheesy movie quote into deep philosophy, there is a difference between knowing the path, and walking the path. Although I was learning these new concepts and using them to understand my past failures, it was difficult to understand how to apply them to my daily life. I continued going through the motions of life, trying to understand my failure, trying, as I phrased it, to learn to live in this world as a human being.</p>\r\n<p>I took the advice of the Dalai Lama and began to practice compassion intentionally. Everyone in the world was suffering the way I was, and if I could not cure my own suffering, perhaps I could help alleviate theirs. The fact that I often found it surprisingly difficult to feel compassion for certain others convinced me that this was the right path. I still struggle with it. I&rsquo;m sure I always will.</p>\r\n<p>Most of you who know me today never met that early Vince. Only a handful of friends managed to hang with me through that time (and thank you all, I love you). Those who met me afterward might not even recognize that angry, depressed, and confused young man. The crisis and transition I describe above is now fifteen years in my past.</p>\r\n<p>This is what led, fifteen years later, to the resolution of my oath, and the cutting of my hair. The intentional practice of compassion allowed me to internalize that life is not about&nbsp;<em>things</em>, it is about people, and compassion is what holds people together. I steadily worked to replace attachments with relationships, impermanent though they may be. As I aged into mid-life crisis territory, I increasingly appreciated the people in my life. And I began to examine the&nbsp;<em>things</em>&nbsp;in my life with great scrutiny. Do I really need this thing? Does it provide me any value, any satisfaction, any joy? Thing after thing went on the rubbish heap as the answers kept coming back negative.</p>\r\n<p>And so finally, this year (2015), I found myself asking of my oath, and the hair that represented it, do I really need this thing? Does it provide me any value? Any satisfaction? Any joy? I was frankly astonished to find myself answering in the negative. I don&rsquo;t need it anymore. I am comfortable with myself, satisfied with my life, and in fact I have been for a few years now. I don&rsquo;t need that hair anymore. I don&rsquo;t need that oath anymore. I am, finally, comfortable with being me, and comfortable talking about being me.</p>\r\n<p>Don&rsquo;t get me wrong. I still have goals, and too many failings to count. There are many things in my life and in my self that I want to change, and I will keep working at them. It is a very long journey, and I am only in the middle. But I have achieved that young man&rsquo;s goal, in a most unexpected way. Neither wealth nor status nor outward appearance brings satisfaction with one&rsquo;s life. Through the practice of compassion for others, I have discovered that being satisfied with one&rsquo;s life means&nbsp;<em>having compassion for oneself</em>.</p>",
+      "date_published": "2015-07-04T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 3,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 21,
+    "fields": {
+      "title": "The Worst Book I Will Ever Write",
+      "slug": "the-worst-book-i-will-ever-write",
+      "status": "usable",
+      "site": 1,
+      "description": "Something I have been struggling with during the work on my (current) first novel is this: I am very likely producing the worst book I will ever write.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>Something I have been struggling with during the work on my (current) first novel is this: I am very likely producing the&nbsp;<em>worst</em>&nbsp;book I will ever write.</p>\r\n<p>Assuming I finish it &mdash; which given past history is not a foregone conclusion &mdash; suppose I find the whole thing too exhausting to do again? Having written only one, it would, by default, be the worst one (and the best I suppose). If I go on to write the second, I should have learned much from writing the first, and the writing should improve. Skills are supposed to improve with practice, are they not? So I am destined to look back on this book and recognize how&nbsp;<em>bad</em>&nbsp;it is.</p>\r\n<p>But there&rsquo;s no getting around that. It was the same thing when I was learning to write computer software. Every six months, I would look back on my code from six months prior, and be disgusted by how bad it was. Most programmers recognize this feeling. It&rsquo;s how we know we&rsquo;re getting better. If ever we look back on old code and feel satisfied with it, it&rsquo;s a sign that we&rsquo;ve stagnated, and maybe it&rsquo;s time to look for a different career. Have you considered middle management?</p>\r\n<p>I expect I will find writing the same. I will struggle to do my best with each succeeding story. And every time I look back, I will be sickened at how badly I botched it. But I will be determined to take my lessons learned to make the next one better. And if ever I look back on a story I&rsquo;ve written and feel fully satisfied with it? That will be the sign that I&rsquo;m done writing, I guess.</p>",
+      "date_published": "2016-11-05T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 4,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 22,
+    "fields": {
+      "title": "The Thing About Life Is...",
+      "slug": "the-thing-about-life-is",
+      "status": "usable",
+      "site": 1,
+      "description": "Why \"failure\" is a lie, and should never stop you.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>Most people like to post on the Internet about their successes. I want to talk about failure. I can assure you, I am fully qualified to talk about failure. I&rsquo;m an expert with thirty years of experience.</p>\r\n<p>You see, the past few months I have been thinking pretty hard about where I am in my life, especially in relation to the dreams and aspirations I had as a teenager. I&rsquo;m forty six years old now. Thirty years ago, I was sixteen, and I had big ambitions. I wanted to publish books. I wanted to make money in real estate. I wanted to find love.</p>\r\n<p>So thirty years on, how am I doing? Two failed marriages, with a handful of failed relationships that never got that far. Finding love? FAIL. Two real estate purchases, one that ended in foreclosure, the other is worth less now than when I bought it, yet I owe more than I paid for it. Making money in real estate? FAIL. Number of books published: zero. Number of books written to completion: zero. Number of failed attempts: [I&rsquo;ve lost count.] So, publishing books? FAIL.</p>\r\n<p>You might be thinking, dude (or some equivalent form of casual address), you&rsquo;ve been failing to achieve your childhood dreams for thirty years? Don&rsquo;t you find that, you know, kind of depressing?</p>\r\n<p>Frankly? Yes. Sometimes I do. Sometimes it crushes me under the weight of my failure so hard that I lie in bed and cry myself to sleep. But, just as frankly, that&rsquo;s a fairly rare occurrence. You know what I do most days?</p>\r\n<p>I keep trying.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>You ever play&nbsp;<a href=\"https://en.wikipedia.org/wiki/Hacky_Sack\">Hacky Sack</a>? It&rsquo;s this game, or activity really, with this little bean bag, a little bigger than a golf ball. You&rsquo;re supposed to kick the bag up in the air. When it comes down, you try to kick it again to keep it in the air. That&rsquo;s basically it.</p>\r\n<p>I figured out, a long time ago, that life is a game of hacky sack.</p>\r\n<p>First off, playing it alone is really hard, and not much fun. Two people can do alright, but the game doesn&rsquo;t get really fun until you have four or five people in a circle playing together.</p>\r\n<p>The object is to keep the sack in the air, but you begin the game knowing that you are doomed to failure. You know, with compete certainty, that the little bag&nbsp;<strong>is</strong>&nbsp;going to hit the ground. When it does? You pick it up and start again.</p>\r\n<p>&ldquo;Success,&rdquo; if there is any in the game, comes when every player in the circle gets in a kick before the sack hits the ground. But, there isn&rsquo;t any score keeping. There&rsquo;s no competition. There&rsquo;s no way to win.</p>\r\n<p>The object of the game is just to&nbsp;<em>keep kicking</em>.</p>\r\n<p>So I still hit that keyboard every day, adding words (currently 47,547 of a target 80,000). Some days, all I can do is stare at the screen. Some days, I&rsquo;m so swamped I can&rsquo;t even look at the computer. Tomorrow, I will try to add 1,000 words.</p>\r\n<p>I&rsquo;m still hammering away at the house, in the literal sense as well as the figurative, working to turn it into something that people would pay money to live in. Most days it feels like the building is out to get me. More than once it has injured me physically. This weekend I&rsquo;ll be repairing the overhead lights in the den. Again.</p>\r\n<p>Love? I still believe in it. I still have hope of having a love all my own one day. Until then, I have a couple of very close friends, you know, not the type who will help you move, but the type who will help you move a dead body. And I have far more friends of the help you move type, with whom I share mutual respect and the occasional beverage, than I ever expected to. Tomorrow, I&rsquo;m having drinks with a bunch of them. And who knows what happens next?</p>\r\n<p>Maybe I never actually make money on that house. Maybe that book never quite makes it (but I think it will). Maybe that perfect someone will simply never be mine.</p>\r\n<p>But I&rsquo;m still here. And I&rsquo;m just going to keep kicking.&nbsp;<em>Because that is the point of life.</em></p>",
+      "date_published": "2017-01-23T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 3,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 23,
+    "fields": {
+      "title": "Creating a Creative Process",
+      "slug": "creating-a-creative-process",
+      "status": "usable",
+      "site": 1,
+      "description": "All writers have a process (I’ve heard). Some writers are \"discovery\" writers or \"pantsers,\" who begin with a character or situation and discovery the story as they write it, \"by the seat of the pants\". I am not one of these writers.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>I always aspired to being an author. In my teens and early twenties, I probably started a half-dozen \"first novels\" that never got finished (and that was probably for the best). When I started writing software, though, that became my creative outlet, and I stopped writing fiction. I even stopped reading fiction for many years.</p>\r\n<p>In 2015, I decided to pick up that dream once again, and I determined to set myself to finishing a first novel. I dusted off some old ideas, tossed in some new twists, and began putting words down.</p>\r\n<p>And I quickly realized that it wasn&rsquo;t going to work.<!-- pagebreak --><span id=continue-reading></span></p>\r\n<p>All writers have a process (I&rsquo;ve heard). Some writers are \"discovery\" writers or \"pantsers,\" who begin with a character or situation and discovery the story as they write it, \"by the seat of the pants\".</p>\r\n<p>I am not one of these writers. What I learned after ten thousand words or so, was that I needed a structured process. I am an outliner. And my outline was not strong enough to hang the writing on. I got stuck.</p>\r\n<p>So I hung up the dream of finishing my novel during 2015&rsquo;s NaNoWriMo, and resolved to take a more disciplined approach.</p>\r\n<p>Currently I&rsquo;m using a process similar to the one I use to create software. I&rsquo;ve laid down the essential elements as cards in Scrivener: the main themes of the story, key scenes, major events. I arranged the events chronologically, and began to break down the story into acts, chapters, and beats. I&rsquo;ve heard television writers talk about \"breaking\" a story in exactly this way to create an episode. That must be a much harder task for television writers, where the acts need to be strictly timed and fairly uniform in size. Fortunately (or unfortunately?) a novelist has a bit more freedom.</p>\r\n<p>As I began to visualize my story outline this way, I discovered major problems. First, a huge amount of the action was bunched up at the beginning. The entire middle was empty of any significant action. And there was no bridge from that empty middle to the resolution.</p>\r\n<p>This is where Scrivener helped me a lot as a tool. Since all my scenes were tucked into these nice index cards, I started to shuffle them. I broke up that tight cluster of cards at the beginning and started to distribute them into the middle chapters. Then, realizing that there was still a huge empty space where the second act was supposed to be, I knew I needed to add a major subplot there to carry it forward.</p>\r\n<p>With a strong outline, the process of actually laying down the words becomes much cleaner for me. I know more or less exactly what it is I need to say, and I can focus on the craft of how to say it. These are two distinct tasks &mdash; determining the action, and describing the action &mdash; and for me they require two different mindsets. Creating a detailed outline helps me separate them.</p>\r\n<p>This led me to the (re)discovery that building the story and telling the story are two very different things. As a writer, I need to understand the chronology of the entire arc, and the back story, and (in my case) the future story as well. Since I am writing fantasy and building a world, I have history and cultures to flesh out also.</p>\r\n<p>But not all these facts will be revealed directly to the reader. Some things that chronologically happen at the beginning won&rsquo;t be revealed to the reader until the end (that&rsquo;s the definition of a mystery, isn&rsquo;t it?). Some of it is backstory or background color that will be sprinkled into the middle, as characters talk about their past (off-screen) interactions.</p>\r\n<p>I&rsquo;m finding that, if I&rsquo;m going to do anything interesting in the telling of the story (mysteries, flashbacks, parallel timelines) I actually need two outlines: one a timeline of events that have happened, for me to keep things straight, and the other an outline of what gets revealed to the reader, the structure of the story. I haven&rsquo;t really figured out how to do that. Scrivener is great at the story structure part, but it feels clunky using it for the author timeline. I know there are some dedicated timelining tools out there. Maybe I should look into them.</p>\r\n<p>There&rsquo;s plenty more I haven&rsquo;t figured out. I know I need to mix character beats with plot beats with world building info-dumps. Currently I&rsquo;m still \"pantsing\" that, and I don&rsquo;t feel like it&rsquo;s very effective. I would like to be more deliberate about exposing the world building and character stuff in the outline, instead of painting it haphazardly onto the plot as I write. On the other hand, a lot of those things don&rsquo;t come up until I&rsquo;m in the character&rsquo;s head in the moment, and I&rsquo;m like, wait, she&rsquo;s writing a letter, but was there even a post office in the middle ages? How DID they deliver the mail? And is she sad, or relieved, that she doesn&rsquo;t have a husband during this trial?</p>\r\n<p>It took me many years to learn how to build software well. Doubtless, it will take years for me to reach journeyman level in the fiction craft as well.</p>",
+      "date_published": "2017-02-19T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 4,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 24,
+    "fields": {
+      "title": "NaNoWriMo 2017 After Action Report",
+      "slug": "nanowrimo-2017-after-action-report",
+      "status": "usable",
+      "site": 1,
+      "description": "I wanted to record for posterity my first experience of \"winning\" National Novel Writing Month.",
+      "share_image": 3,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>I wanted to record for posterity my first experience of \"winning\" National Novel Writing Month. As you may know, NaNoWriMo is a self-challenge to write 50,000 words in 30 days.</p>\r\n<p>Throughout 2017, I have been tracking my writing statistics (screenshot provided). As you may see from the screenshot, before November, I never got anywhere near 50k words in a single month. So I took NaNoWriMo 2017 as a true challenge to get my word counts up and make some real progress, to prove to myself that I could truly improve both speed and quality.</p>\r\n<p><span class=\"gatsby-resp-image-wrapper\"><img class=\"img-fluid\" src=\"../../../../../media/WordChar2017-11.png.960x540_q85.png\" alt=\"Nano 2017 Recap Writing Stats Chart\" width=\"711\" height=\"540\" /><br /><!-- pagebreak --><span id=continue-reading></span></span></p>\r\n<h2>Background: The Story So Far</h2>\r\n<p>The novel I worked on in November 2017 was not my first. I started a novel back in November 2014, but did not win NaNo, or even come close. What I learned from that experience is that drafting a novel (what most people call \"writing\") takes preparation. I needed to know my characters, and my plot, better, or else I would spend all my writing time noodling around, doing \"research\" on the Internet (read \"following Wikipedia links for hours\"), and doing almost anything except actually producing publishable words on the page.</p>\r\n<p>After struggling with that book for two years, I decided I needed a break. Not a break from writing, but a break from that particular book. The style and subject I had chosen for that book made it a very time-consuming task, and I wasn&rsquo;t accelerating. I knew I needed to accelerate if I was ever going to reach my final production goal of producing four books a year.</p>\r\n<p>So in 2017, I changed tacks. I also changed projects, and characters, and genres, and writing styles. Most importantly, I changed my focus. I put aside all my other optional projects so I could focus on writing.</p>\r\n<p>If you look at my word count charts, they illustrate the story. In January, I wrote a scene. I had just read&nbsp;<a href=\"http://amzn.to/2nT1PnK\">Farewell My Lovely by Raymond Chandler</a>&nbsp;(if you listen to audio books, this one should not be missed), and I wanted to experiment with writing in that style. First person, but without internal monologues. Filled with over-the-top, sometimes hilarious metaphors and similes. Varied sentence length that leaned heavily to the short side. Characters that were hard, and dark, and mysterious.</p>\r\n<p>So, I wrote a scene, off the top of my head, focusing on the style and letting the content be just whatever popped into my head. Didn&rsquo;t matter if it made sense.</p>\r\n<p>Long story -&gt; short, I liked the output, and wanted to do more. But I now had this scene, and these characters, and all these little hints in the scene about secrets, and I didn&rsquo;t know where any of it went! After that scene, I understand the thrill that \"pantsers\" have when they are writing. (And after working on the full project, I understand why I will never be a pantser.)</p>\r\n<p>That gap in drafting in February is partially time I spent trying to flesh out the world, the characters, and the story that was born in that first scene. (And partially that I had no time to write because I just moved into a house while it was still under remodel, and it was cold, and the heat wasn&rsquo;t working yet. Sigh.)</p>\r\n<p>In March, I had produced an outline, I had a draft target of 55,000 words, and I was ready to go. I also decided to be meticulous about tracking my writing progress, because I&rsquo;m a big nerd. My naive goal was to produce an average of 1,000 publishable words each day. Still not there. But getting better.</p>\r\n<p>Through March, April, and May, I worked on my first draft. As you can see from the chart, April was the stand-out month for me. I had 16 writing days, and my per-day average was far higher than before. That&rsquo;s because I created (what I thought was) a solid outline of the book before I started drafting. I knew where the story was going, so each day when I sat down, I knew exactly what I needed to work on. And, check it: I finished the book! Woohoo!</p>\r\n<p>Lessons learned from the first completed book:</p>\r\n<ol>\r\n<li>The draft came in about 20% shorter than I had planned. Apparently I am a \"short writer\". Revisions need to add words more than remove them. That&rsquo;s cool. Good to know.</li>\r\n<li>There was a point in the middle where the outline fell apart. I had to stop drafting and start outlining again. I would need more-detailed outlines in future.</li>\r\n</ol>\r\n<p>I spent the rest of May and most of June revising and adding to the book. That&rsquo;s why the word counts per day are much lower there. I was doing as much reading as writing, and I was padding out and enhancing scenes rather than writing them from whole cloth.</p>\r\n<p>In June, I spent a couple of weeks outlining a sequel. In July I commenced drafting the sequel. July and August were good months for drafting. At the end of July, I looked back at my stats. I found that my words per day were pretty solid, but I wasn&rsquo;t hitting my desired average over time, because I was not getting enough drafting days in. So I decided that, in August, I would focus on writing every single day, and not care so much about word count. I did really well on that for the first thirteen days of the month.</p>\r\n<p>And then my outline blew up again. So I stopped writing, and went back to the drawing board to figure out what to write.</p>\r\n<h2>The Run-up to NaNoWriMo</h2>\r\n<p>By the time I had that outline fixed, I realized that I only had a couple of months to go before NaNo. I was determined to win NaNo this year with what I learned. I knew to win, I needed to have a really thorough outline. I knew my timing would be off if I continued with the current project, so I shelved it. (Sorry Tracy! I will finish it, I promise!)</p>\r\n<p>I started researching for my epic fantasy series. (How do you research fantasy? More about that in a future post.) Then, I started building an outline. I built it first using the same basic process as before, just make a card for each event. But I had learned that an event is not necessarily a scene or a chapter. Sometimes, it&rsquo;s just a page, or a sentence. So then I went back, and started stacking those events. New Stuff:</p>\r\n<p>I made a list of POV characters and assigned scenes to them.</p>\r\n<p>I reshuffled the outline to get thematic alignment between the story threads.</p>\r\n<p>I ran it through the Story Grid and Save the Cat frameworks to make sure I was hitting the right beats. I even looked at it through the lens of Dramatica (more on that in another post too). I added scenes and characters to bring it into alignment.</p>\r\n<p>Once I had beaten the book outline into submission, I went back to the beginning and started outlining each individual scene, making sure it had an inciting incident, a turning point, an emotional charge, and as much as possible, a dramatic conflict.</p>\r\n<p>Three days before November began, I could see that I was not going to finish my individual scene outlines in time. I had 42 of them to do, and each one was taking about an hour. I decided I would create them as I went along.</p>\r\n<p>Since my outline called for an 82,000 word draft, I decided to go ahead and start drafting.</p>\r\n<h2>Thirty Days of NaNoWriMo</h2>\r\n<p>The first few days, I was drafting scenes for which I had created scene outlines. This was so easy it felt like cheating. I already knew the emotional content, the character conflicts, the implications for future chapters. I blasted through my target word counts each day. The first day I missed target was the 7th, but that was because somebody broke into my house and tossed the place while I was at work, and I had to spend my writing time dealing with that. (Real life sucks.)</p>\r\n<p>Couple of days later, my scene outlines ran out, and I had only single-paragraph descriptions to work from for each scene. Some of those scenes were already well-formed in my mind, and those days produced more than 2,000 words. Other scenes still needed the outline work put in, and on those days, I struggled. Even on the slow days, though, I was usually able to break at least 1,000 words.</p>\r\n<p>For most of the month, I was well ahead of the target curve. But, life happens. I had a couple of days when I was too busy to write, and a couple that produced very few words, because of reasons. I was falling behind. But I was so close!</p>\r\n<p>To make sure I caught up, I decided to switch from my linear approach (writing scenes in the order they would appear in the book) to a non-linear selection approach (writing scenes that had the strongest outlines, and connected more directly to scenes already written). In that way, I was able to power through that last weekend and get back on top. It took me until the final day of the month, but I did, finally, cross the 50k mark. I win!</p>\r\n<p>November 2017 was my most productive month ever! I drafted on 28 of 30 days, and yet my average per day was higher than ever before! I attribute this to the intense work I put into outlining the book, and then the individual scenes, before the drafting phase began. For my next book, I will complete the scene-level outlines before I begin drafting.</p>\r\n<p>As I write this, I still have about 25k words to write in the first draft of this book. And I can tell you, that first draft is rough. It&rsquo;s going to need a lot of work. But it&rsquo;s also clear to me that I am improving as I go. If I keep working, keep learning, keep accelerating, I will soon hit that thousand word a day goal. And may even produce a book worth publishing!</p>",
+      "date_published": "2017-12-11T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 4,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 25,
+    "fields": {
+      "title": "Cursing Fate Cover Art! And a FREE offer!",
+      "slug": "cursing-fate-cover-art-and-a-free-offer",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": 4,
+      "base_template": "",
+      "content_template": "commoncontent/blocks/article_featuredimage.html",
+      "body": "<p><a href=\"../../../../../seers-guild/cursing-fate\">Cursing Fate: The Piero Codex Book One</a>, is now available for pre-order on most major ebook retailers! This is the first book in my urban fantasy thriller series, The Piero Codex. Books two and three will follow quickly in a rapid release schedule, so don't worry, you won't have to wait long to read the whole trilogy.</p>\r\n<p>I am unspeakably excited that my first book is finally available to the world. In fact, I'm so excited that you can call me Giveaway Bob, because&nbsp;<em>I'm giving them away</em>!</p>\r\n<p>For a limited time, just for being an early fan, you can get the</p>\r\n<p>Cursing Fate ebook for FREE!&nbsp;<a href=\"../../../../../seers-guild/cursing-fate\">Click here to get it!</a></p>\r\n<p>And if you need convincing, check out this gorgeous cover (by Barb Hoeter at&nbsp;<a href=\"http://coverinked.com/\">Coverinked</a>)!</p>",
+      "date_published": "2018-03-28T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 5,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 26,
+    "fields": {
+      "title": "Shifting Loyalties: Cover Art and Pre-order",
+      "slug": "shifting-loyalties-cover-art-and-pre-order",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": 5,
+      "base_template": "",
+      "content_template": "commoncontent/blocks/article_featuredimage.html",
+      "body": "<p>Big announcement!&nbsp;<a href=\"../../../../../seers-guild/shifting-loyalties\">Shifting Loyalties: The Piero Codex Book Two</a>&nbsp;is now available for pre-order on most major ebook retailers!</p>\r\n<p>Barb from&nbsp;<a href=\"http://coverinked.com/\">CoverInked</a>&nbsp;really stepped up her game on this cover, don't you think?</p>\r\n<p>When it&rsquo;s a matter of life and death, how do you know who to trust?</p>\r\n<p>Mack was never good at trusting people, even before he went underground hiding from the Seers Guild. But when the former love of Mack&rsquo;s life (Marina) goes missing, and an unknown organization makes dramatic moves against the Protectors of the Piero Codex, he needs help.</p>\r\n<p>Maybe he can trust Recca, but she still seems to have a hidden agenda of her own. Maybe he can trust Lilly, but will involving her just get her killed? Maybe he can trust Marina&rsquo;s husband Richard, but how is he supposed to work with the guy who stole his girlfriend?</p>\r\n<p>With the enemy closing in, and time running out, turning an enemy agent seems like the best option. But when you can&rsquo;t even trust your friends, how do you trust an enemy? Even if he manages to make all the right choices, how is Mack going to convince the other players to trust&nbsp;<em>him</em>&nbsp;long enough to save Marina and protect the Codex?</p>\r\n<p>This second installment in The Piero Codex series takes you deeper into the world of seers, and reveals some of the secrets of the Codex itself! Get it today! (Pre-orders will be delivered June 14, 2018.)</p>\r\n<h3>Where To Get It</h3>\r\n<ul>\r\n<li><a href=\"https://www.amazon.com/gp/product/B07CRQNHJG?tag=mindvessel-20\">Amazon.com</a></li>\r\n<li><a href=\"https://geo.itunes.apple.com/us/book/id1378435376?at=1000lLuu\">Apple iBooks</a></li>\r\n<li><a href=\"https://www.tkqlhce.com/links/7968444/type/dlg/http://www.barnesandnoble.com/s/2940162009573\">Barnes &amp; Noble</a></li>\r\n<li><a href=\"http://click.linksynergy.com/deeplink?murl=http%3A%2F%2Fwww.kobo.com%2Fsearch%3FQuery%3D9781948895019&amp;id=/HjoOCs/nPQ&amp;mid=37217\">Kobo</a></li>\r\n</ul>\r\n<p>&nbsp;</p>",
+      "date_published": "2018-05-09T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 5,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 27,
+    "fields": {
+      "title": "Dramatica: My Take-Aways",
+      "slug": "dramatica-my-take-aways",
+      "status": "usable",
+      "site": 1,
+      "description": "There is some genius in this theory, and possibly some madness. Every writer should at least understand Dramatica's four through-lines, its definition of character archetypes, and the two helpful concepts of character resolve and story limit. If you go deeper, prepare to be confused.",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>TL;DR: There is some genius in this theory, and possibly some madness. Every writer should at least understand Dramatica's four through-lines, its definition of character archetypes, and the two helpful concepts of character resolve and story limit. If you go deeper, prepare to be confused.</p>\r\n<p><!-- pagebreak --><span id=continue-reading></span>The high-level concept in the Dramatica theory is that a story is a model of a human mind attempting to solve a problem. A \"complete story\" is a story that examines all possible solutions to a single problem.</p>\r\n<p>Dramatica comes with a bundle of self-imposed caveats. It admits that it is a theory that describes a certain kind of story. It also admits that a good story structure doesn't necessarily lead to a good story, and there are plenty of successful stories in the world with incomplete structures (according to the Dramatica theory). Like several other popular story structure theories, it was developed around Hollywood movies, and doesn't adapt perfectly to other storytelling forms.</p>\r\n<p>This theory is extremely complex. It invents a vocabulary all its own for analyzing stories, which makes it difficult to absorb quickly. I'll be honest and say up front, I don't have a deep understanding of it. If you want to go deeper, see the resources at the end.</p>\r\n<p>That said, this theory has some insights that I have found extremely valuable in constructing and understanding stories. Here they are.</p>\r\n<h2>Dramatica's Four Through-Lines</h2>\r\n<p>Dramatica identifies four through-lines that intertwine to weave a complete story.</p>\r\n<p><strong>The Overall Story Through-line</strong>: This is the \"big picture\" story, the broad scope, or what I sometimes think of as the plot.</p>\r\n<p><strong>The Main Character Through-line</strong>: The story as seen through the eyes of someone in it. The \"main character\" is the primary point-of-view character, the person we expect the audience to most empathize or identify with.</p>\r\n<p><strong>The Influence Character Through-line</strong>: Also called the Impact Character, the IC's perspective on the story is different from the main character's. The IC attempts to influence the MC to change their perspective or approach.</p>\r\n<p><strong>The Subjective Story Through-line</strong>: Also called the Relationship, this is the relationship between the main and influence characters in the context of the story.</p>\r\n<p>Explicitly identifying these four through-lines makes it easy to see why some stories seem to have no \"heart.\" Those plot-driven stories focus on Overall Story and give little attention to Character and Relationship.</p>\r\n<p>The interplay of plot, character, and relationship is what makes stories really stick. I like to say: Plot is what happens. Story is how your characters change (or don't) because of what happens.</p>\r\n<h2>Character Resolve</h2>\r\n<p>Speaking of change, another extremely useful concept I picked up from Dramatica is character resolve. In Dramatica the theory focuses on the Main Character Resolve, assigning it either Change (the main character changes their perspective or approach by the end) or Steadfast (the main character retains their original perspective or approach at the end).</p>\r\n<p>This part of the theory addresses what is normally called the character arc. Arcs come in pairs, according to the theory. The Main and Influence character have different approaches to the story problem. At the end of the story, one of them must be proven right, and remain Steadfast, the other must be proven wrong and Change.</p>\r\n<p>There are a lot of story theorists who think that the main character must change, even going so far as to define the main character as the one who changes. Those theories never sat well with me. Dramatica's insight that a character is tempted to change, but may remain steadfast, encompasses a much more diverse set of great stories and dramatic possibilities.</p>\r\n<p>While Dramatica primarily cares about the main character's resolve, it seems to me that any character who has an arc must have a resolve, and probably needs to have their own influence character to reflect the opposite resolve to make the story feel complete.</p>\r\n<h2>Character Archetypes: Protagonist vs Main Character</h2>\r\n<p>Briefly, Dramatica identifies eight character archetypes: Protagonist, Antagonist, Reason, Emotion, Sidekick, Skeptic, Guardian, and Contagonist. The theory goes into great detail explaining how these archetypes are constructed, and how they can be broken down to create more complex and interesting characters. I can't do the theory justice in a short summary. Go check it out for yourself.</p>\r\n<p>The key insight that I found most useful here is the clear distinction between the Protagonist (the driver of the Overall Story) and the Main Character (the primary POV character).</p>\r\n<p>According to the vocabulary of the theory, the Protagonist is the character who pursues the Overall Story goal. The Main Character is the character the audience most identifies with, the one through whose eyes we see. When these two roles are played by the same character, they are called a Hero. This is a common construction, but not the only one.</p>\r\n<p>A more complex story can separate these roles into different characters. The standard example is To Kill A Mockingbird, where the Main Character is young Scout, but the Protagonist is Atticus Finch.</p>\r\n<h2>Story Limit</h2>\r\n<p>Finally, Dramatica helped me understand the concept of a story limit. You have seen story limits in action stories where there is a literal ticking clock. If the clock counts down to zero, the hero loses! The ticking clock is called a Time Limit. It's so prevalent that Story Grid creator Shawn Coyne assigned an entire sub-genre to it.</p>\r\n<p>Dramatica clued me that there is another kind of story limit: the Option Limit. This is where the story is given finite scope by allowing limited options: three wishes, and then you're done.</p>\r\n<p>The story limit is the thing that adds dramatic tension to your story and compels the characters to move forward. Without a story limit, stories can just meander on and on, reaching no conclusion, or characters can sit around indefinitely without moving the story forward at all.</p>\r\n<h2>Final Thoughts</h2>\r\n<p>Dramatica also has some interesting things to say about act structure, showing how two, three, and four act structures can be derived from the value shifts among the four through-lines and how they are distributed through the story. There's much, much more to Dramatica; too much for me to wrap my head around.</p>\r\n<p>I have found that story limit, character resolve, and the four through-lines have been excellent tools for me to apply in the construction of stories.</p>\r\n<p>To learn more about Dramatica:</p>\r\n<ul>\r\n<li><a href=\"http://dramatica.com/\">Dramatica Website</a></li>\r\n<li><a href=\"https://amzn.to/2JgbT3J\">Buy the Book</a>&nbsp;(but the&nbsp;<a href=\"http://dramatica.com/theory/book\">full text is available for free</a>&nbsp;on the website)</li>\r\n<li><a href=\"https://narrativefirst.com/podcasts\">Narrative First Podcast</a></li>\r\n</ul>",
+      "date_published": "2018-06-08T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 4,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 28,
+    "fields": {
+      "title": "Shifting Loyalties Is Available Today!",
+      "slug": "shifting-loyalties-is-available-today",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": 5,
+      "base_template": "",
+      "content_template": "commoncontent/blocks/article_featuredimage.html",
+      "body": "<p>You can stop holding your breath!&nbsp;<a href=\"https://https//books2read.com/b/vv-shifting-loyalties\">Shifting Loyalties: The Piero Codex Book Two</a>&nbsp;has been released! (Okay, I know you weren't really holding your breath, but I was!) This is my second novel, as well as being the second book in The Piero Codex series.</p>\r\n<p>I'm excited to introduce shape-shifters into the Seers Guild world with this release. You have some new characters to meet (including the mysterious ex, Marina), some secrets of the Codex itself will be revealed, and Mack is going to get into a whole new mess of trouble! This second installment has more action, more magic, more pages, and possibly more bourbon (I didn't count the drinks). Trust me, it's even better than the first one!</p>\r\n<p>If you pre-ordered the book, you should have it on your reading gizmo already. If you didn't, hit your favorite ebook retailer and grab it today (links below for your convenience)!</p>\r\n<p>I'm currently hard at work writing&nbsp;Summoning Courage: The Piero Codex Book Three to wrap up this trilogy. In the meantime, I hope you enjoy reading Shifting Loyalties!</p>",
+      "date_published": "2018-06-14T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 5,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 29,
+    "fields": {
+      "title": "Where the heck is book three?",
+      "slug": "where-the-heck-is-book-three",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>I know what you're thinking. Didn't Vince say he was going to give me the conclusion to The Piero Codex trilogy in July? Where is it already?</p>\r\n<p>Well, have you ever heard that quote about where the best laid plans often go? Yeah. Summoning Courage WAS planned to ship in July, but as it stands today, the draft is only about half complete. I'm working on it and making steady progress, but the muse and I are having disagreements that have slowed things down. Give me another couple of months to iron out the kinks, m'kay?</p>\r\n<p>But I would hate for you to have nothing to read for all that time! If your \"to read\" queue is looking a little dry, let me give you a recommendation to tide you over. Since you enjoy my books, I feel pretty confident that you will love Dana Cameron's&nbsp;<a href=\"https://amzn.to/2mFrw7B\">Seven Kinds of Hell</a>, the first book in her&nbsp;<a href=\"https://amzn.to/2A6Q6bn\">Fangborn series</a>. It has a lot of the elements you love: dark magics, secret societies, ancient relics, and a fresh take on the \"vampires and werewolves\" concept. I encourage you to check it out!</p>",
+      "date_published": "2018-07-25T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 5,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 30,
+    "fields": {
+      "title": "2018 NaNoWriMo After-Action Report and Annual Review",
+      "slug": "2018-nanowrimo-after-action-report-and-annual-revi",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": 6,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>So much can change in a year!</p>\r\n<p>This has been a year of massive change for me, and we'll discuss that below. But first, I participated in National Novel Writing Month again this year, and as last year, this is my report on how I performed. Short story: I didn't \"win\" by writing fifty thousand words, but I did make a very good showing. Here's my word count graph for 2018.</p>\r\n<p><img class=\"img-fluid\" src=\"../../../../../media/2018-summary.png.960x540_q85.png\" alt=\"2018 Word Count Chart\" width=\"960\" height=\"369\" /></p>\r\n<p>As you can see, my NaNoWriMo project capped out at 31,168 words. Not bad. I drafted twenty-one days in November, so my average was below the required \"winning\" pace. Still, I averaged a thousand words per calendar day, and I feel pretty good about that.</p>\r\n<h2><!-- pagebreak --><span id=continue-reading></span>2018: The Big Year</h2>\r\n<p>I started 2018 by getting laid off from my job. Most people consider that a big \"suck\" life event, but for me, it was kind of a relief. I had worked there more than a decade, and over the last 3 years there, massive changes at the company had sucked away most of the joy of my job. I was tired of it, and I needed a change.</p>\r\n<p>I found myself in a very lucky position. I had a severance package and resources of my own, so I didn't need to go find a job immediately. I was burned out on the corporate world and could not face another \"enterprise IT\" job. I decided instead that I would try to live the dream, and work on my author career full time for a while.</p>\r\n<p>The first four months of the year were extremely productive. I had no day job to interfere with my writing. I did my edits and rewrites on&nbsp;<a href=\"../../../../../seers-guild/cursing-fate\">Cursing Fate: The Piero Codex Book One</a>&nbsp;in January. In February, I picked up my half-finished draft of&nbsp;<a href=\"../../../../../seers-guild/shifting-loyalties\">Shifting Loyalties: The Piero Codex Book Two</a>. I tried, as an experiment, tracking words on edits and rewrites, but in practice I discovered that it threw my numbers way off. Although I recorded 41k words in February, I only actually produced around 8,000 words of draft. The rest was pre-existing draft that was edited. Live and learn.</p>\r\n<p>With my outline newly revitalized, I dove into drafting Book Two, and finished it in mid-April. During those months, I also registered an LLC, established relationships with the online ebook retailers, ordered ebook covers for the series, and generally got my publishing business ready for action. I ambitiously created a release plan for the series to release one a month, scheduled the first release for may, and started working on Summoning Courage: The Piero Codex Book Three.</p>\r\n<h2>Nothing Is Ever Easy</h2>\r\n<p>And then reality happened. Book Three fought me from the very beginning. I was never satisfied with the outline, and the early draft just was not working. I got Book One published in May. Took a break from the draft to do my final revisions on Book Two, which turned out great, except that most of my readers didn't get to see that final polish because Amazon and I had a misunderstanding about publishing dates and final copies. That frustrated me even more, and made it that much harder to get Book Three moving in the right direction.</p>\r\n<p>As had happened with the first two books, I reached a point near the middle of book three when I realized the outline needed a complete overhaul, and I was not going to hit my ship dates. That major slowdown in the May-June-July timeframe was me struggling to fix the outline and get back on track.</p>\r\n<p>I finally did reach an outline that I could live with, and started rebuilding momentum. This was made difficult by the fact that I was starting to run low on money and started looking for a day job I would not hate. Not an easy task. I was dividing my time between writing, job hunting, and working to level up my software development skills (in aid of the job hunt).</p>\r\n<p>I finished the draft of Book Three on the last day of September, just under the wire to meet my revised Q3 delivery target.</p>\r\n<p>The draft was very rough, and I knew it needed a lot of revision before it could be published. I had to make a choice. If I worked on the revisions in October, they would drag into November, and I would be completely unprepared for NaNoWriMo. I would not be able to participate, and that idea made me sad.</p>\r\n<p>The book was already late, and my twenty or so readers knew that. I shrugged, said what the hell, and put Book Three on a shelf to spend October preparing for NaNo.</p>\r\n<h2>How I \"Failed\" at NaNoWriMo</h2>\r\n<p>I had already selected a new character and story for my next project. I knew from experience that I needed a strong outline if I was going to hit high word counts on my first draft, so I spent most of October filling whiteboards with plot points and character arcs. I worked HARD for two weeks. I spent no time drafting, only outlining. I got to a point where I had an outline I considered draftable.</p>\r\n<p>I would like to have spent two more weeks on the outline. The first half of the outline was solid and complete, sixteen strong scenes and two that needed a little TLC. The second half had a lot of scenes with vague or missing turning points, and a few that remained one-liners. Unfortunately (or fortunately), my job hunt came to an end, and I found myself with a full time day job again.</p>\r\n<p>Starting the new job didn't just consume my daytime hours. The commutes were long. I had to worry about planning meals again, instead of just walking to the fridge. I was learning a new codebase, learning to work with a new team, using a new process, and trying to make a good impression. It was exhausting. And the new hours disrupted my sleep schedule, leaving me even more tired.</p>\r\n<p>For the first couple of weeks of November, I pushed myself hard, and I performed well. But I could see that my words per hour were on the low side. Extra hours on the weekends kept me in the race. My outline was holding up. But I wasn't. The change of weather was giving me headaches and nosebleeds. Then I got food poisoning, which lost me a whole day and night.</p>\r\n<p>By the week of Thanksgiving, the lack of light, the lack of sleep, and the stress caught up with me. I was killing myself, and I had to ask myself why. At this point, I had proven that I could win NaNo. I had proven three times over that I could complete a novel. I had even proven that I could sell copies books I had written. I did not need to sacrifice my physical or emotional health to prove anything.</p>\r\n<p>So I backed off the writing and started working on recovering. It's mid-December and I still don't have my sleep schedule sorted out, but I am less sleep-deprived than I was, and on the way to better. I've put this year's NaNo project on the shelf for a little while. Over Christmas break, I will pick up Summoning Courage and complete the revisions on that. Then, I will finish the draft for my new book, hopefully by late January or early February of 2019.</p>\r\n<h2>2018 Lessons Learned</h2>\r\n<p>It was a big year, and I have a lot of lessons learned from it. Here's a summary.</p>\r\n<h3>Writing fiction is harder than writing code.</h3>\r\n<p>I'm an introvert. People wear me out, and I need alone-time to recharge. Writing code is something I can do all day. It's like solving a jigsaw puzzle. No people involved. Not very taxing emotionally.</p>\r\n<p>Writing fiction, on the other hand, is like a family argument times five. Creating conversations and interactions where I have to carry both sides, to flesh out the emotional reactions of multiple characters, some (most) of whom are much more intense than me. I find it utterly draining. Despite the fact that I had all day to write for much of the year, I seldom spent more than two hours a day actually drafting. Any more than that, and I found I needed time off to recover.</p>\r\n<p>Conclusions from that? For starters, full time writer may not be the best career for me. That doesn't mean I'm going to stop writing. Far from it. But I don't see myself being one of those prolific authors who publish a book a month. I'll be happy to produce two books a year for now.</p>\r\n<h3>Sleep is important. Health in general is important.</h3>\r\n<p>If I'm tired or depressed, I simply can't produce good fiction. Creativity requires vitality, energy, desire. To keep myself writing, I have to accept my limitations and take care of myself first. And that's something I have struggled with all my life. Well, that's how it goes. Keep struggling, Vince!</p>\r\n<h3>I make plot-driven outlines, and character-heavy drafts.</h3>\r\n<p>My process is very plot-driven. I create an outline marking the events of the external story. Then when I draft it, I internalize the characters, dramatize their internal reactions. I'm not particularly good at characters. It's hard work. I enjoy outlining more, because it's less like an awkward cocktail party and more like architecting software. (What can I say, I'm weird.)</p>\r\n<p>Maybe I should find a writing partner who is all about character and hates plotting? I bet we could produce some great stuff together! But I really need to level up my skills a lot more before I'm ready for that kind of collaboration.</p>\r\n<h3>I still don't understand the \"middle build\".</h3>\r\n<p>When it comes to story structure, I feel like I have a solid grasp of Act One, the first quarter of the story. I think I do alright with that last quarter, which I tend to write as a fast-paced rush to the climax. But the middle still baffles me. I'm only just beginning to understand how to structure progressive plot complications and character arcs to fill the middle half of the story with compelling reading.</p>\r\n<p>As a result, I think my next project I will spend even more time outlining. And I will spend more time analyzing great stories to learn from them.</p>\r\n<h2>NaNoWriMo 2019 and Beyond</h2>\r\n<p>After this year's experience, I'm not sure I'll be participating in NaNo next year. I no longer feel I have anything to prove, and the event is inconveniently timed for me. It's the time of year I prefer to be ramping down, not ramping up.</p>\r\n<p>I think instead I will focus on honing my skills and creating books at a pace I know is sustainable for me. And I will also allow myself to spend time on other, non-book side projects again. Because I like writing software too!</p>",
+      "date_published": "2018-12-16T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 4,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 31,
+    "fields": {
+      "title": "How I Write a Novel: My Creative Process as of 2019",
+      "slug": "how-i-write-a-novel-my-creative-process-as-of-2019",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": null,
+      "base_template": "",
+      "content_template": "",
+      "body": "<p>Two years ago I wrote a post about&nbsp;<a href=\"https://vince.veselosky.me/creative-process/creating-creative-process\">Creating a Creative Process</a>. Since then, I have completed three novels and am in production on a fourth, with many more in the pipeline. I have learned a lot of lessons through trial and error. I still have a lot more to learn. But after two years, I figured it was time for an update.</p>\r\n<p>Note that this post is&nbsp;<em>not</em>&nbsp;titled \"How To Write a Novel\". This is a snapshot of my own process at a specific time in my writing journey. Maybe it will be helpful to other writers, but it's not a prescription nor a recommendation. I'm just sharing my experience.</p>\r\n<h2><!-- pagebreak --><span id=continue-reading></span>Step 0. From Idea To Project: The Gestational Phase</h2>\r\n<p>Like every writer, I have a huge pile of ideas I have jotted down over the years. Every project begins as at least one idea. But most ideas never go into projects. I like to pull elements out of stories I like, or out of stories I don't like that I think I could tell better. I spend a lot of time mulling, recombining pieces to see what could be constructed from them.</p>\r\n<p>An idea doesn't turn into a project until I have nailed down three important aspects of the story:</p>\r\n<ol>\r\n<li>The Premise (Why): What's the thing that makes it worth my time to write?</li>\r\n<li>The Genre (What): I will never again begin earnest work on a project without identifying the genre I'm targeting. I currently use the Story Grid definitions of Genre, but I also consult Save the Cat's ten types of stories, Amazon categories, and other definitions of genre. This defines what&nbsp;<em>kind</em>&nbsp;of story I want to tell, and creates some constraints on structure and conventions.</li>\r\n<li>The Main Character (Who): I need to have at least one of the POV characters \"figured out\" before I can begin. They don't need to be fully fleshed out, but I need to have a sense of their personality and emotional journey, or else anything I write is going to sound flat and bland (I know, I tried it).</li>\r\n</ol>\r\n<p>This phase has no time bound. For some projects it is infinite, for others, a few months. Years will not be unusual, because I can only work so many projects in a year.</p>\r\n<h2>Step 1. The Board: The Story Forming Phase (2-8 weeks)</h2>\r\n<p>I have a confession that may shock and dismay. I don't enjoy drafting. Drafting is the \"writing\" part of writing, where you type out all those damn words. I don't hate drafting, but I don't like it. To me, drafting is the scut work, the drudgery that simply must be done to produce the product. Some writers&nbsp;<em>love</em>&nbsp;drafting, and their process turns entirely around that activity. They write a draft, and then revise it with further drafts three or five or seven times. My process is designed to keep drafting to an absolute minimum. I don't want to write anything more than once!</p>\r\n<p>&nbsp;</p>\r\n<figure class=\"alignright\r\nis-resized\"><span class=\"gatsby-resp-image-wrapper\"><img class=\"img-fluid\" title=\"\" src=\"../../../../media/BadPennyBoard.jpg.960x540_q85_crop.jpg\" sizes=\"(max-width: 590px) 100vw, 590px\" srcset=\"/static/6d3b8f786bfc347222fd1f20fd465804/8ee9c/BadPennyBoard.jpg 148w,\r\n/static/6d3b8f786bfc347222fd1f20fd465804/ebbe7/BadPennyBoard.jpg 295w,\r\n/static/6d3b8f786bfc347222fd1f20fd465804/c739e/BadPennyBoard.jpg 590w,\r\n/static/6d3b8f786bfc347222fd1f20fd465804/5413e/BadPennyBoard.jpg 885w,\r\n/static/6d3b8f786bfc347222fd1f20fd465804/4efde/BadPennyBoard.jpg 1180w,\r\n/static/6d3b8f786bfc347222fd1f20fd465804/ce7d5/BadPennyBoard.jpg 4006w\" alt=\"brief scene descriptions laid out in a grid\" width=\"960\" height=\"540\" /></span></figure>\r\n<p>SPOILER ALERT! \"The Board\" for my current work in progress.</p>\r\n<p>&nbsp;</p>\r\n<p>Therefore, step one is to create an outline. There are as many ways to create an outline as there are outliners. I have adopted a slightly modified version of The Board as described in&nbsp;<a href=\"https://amzn.to/2Rwijjl\">Save the Cat</a>. The story is laid out in a grid with four rows, each representing 25% of the story. In my own head I refer to these as \"acts\" but that tends to confuse (or anger!) people who cling religiously to the Three Act Structure, so I'll just call them quarters.</p>\r\n<p>This grid layout is an excellent visualization for story structure, because the most significant events of the story will form a nice tidy column down the right side of the grid (these are the \"plot points\" or major turns and the climax). The second-tier events of the story (the \"pinch points\") will likewise be lined up down the middle of the grid. The setup work will be lined up in the left column. The spaces between are the connective tissue of the story. This gives a story that is well-paced. Snyder recommends doing this with notecards. I have been writing them on a whiteboard. It's the layout, not the medium, that matters.</p>\r\n<p>What I do at the board is what many writers do in their first and second draft. I figure out what happens, and why, and to whom. I typically work from right to left. What are the big events and major turns? What are the complications that lead up to them? What setup do I need to get there? I decompose the story into acts, sequences, and scenes. In the beginning it's a lot of scribbling, but before long it coalesces into a solid outline.</p>\r\n<p>At the end of this process, I have enumerated all the major characters and turned my general idea into a list of scenes that should flow logically from beginning to end.</p>\r\n<p>It's difficult to say how long this phase truly lasts, since I have only recently adopted this technique. For my current work in progress, I spent two full weeks working on it a couple of hours a day, so maybe thirty working hours? But that plot was already well-developed in my head before I began outlining. And in future I intend to be even more thorough in this phase, so probably longer. I imagine some projects will require eighty hours or more.</p>\r\n<h2>Step 2. The Half Draft (4-8 weeks)</h2>\r\n<p>Now begins the drafting phase. I begin to draft the scenes, one at a time, from beginning to end, in order. I will explore the inner lives of the characters, add color and personality quirks, invent settings, develop the voices, etc.</p>\r\n<p>In this step I will draft somewhere between 25% to 50% of the words. And then I will stop.</p>\r\n<p>By this point, I will have discovered several problems with my original outline. Maybe I need an additional scene to drive the motivation of a character. Maybe I missed an obvious \"why don't they just\" solution to the character's problem that needs to be explained away or blocked by new complications. Maybe I discover that a planned solution to a problem won't actually work and have to resolve that.</p>\r\n<p>Probably I have added several new setups during drafting whose payoffs will need to be added to the outline. Conflict threads will have developed that will need to be wrapped up somehow at the story's conclusion. The exact order of events may shift.</p>\r\n<p>In short, before I can finish the draft, I need to go back and revise my outline.</p>\r\n<p>The half-draft typically takes 1-2 months at my current drafting pace.</p>\r\n<h2>Step 3. Back To The Board (2-8 weeks)</h2>\r\n<p>I put the draft away for a time and return to my outline. I have a list of problems to sort out, some gaps to fill, some weak scenes to prop up, replace, or remove. The climax, which has been somewhat abstract, now begins to take on very specific forms.</p>\r\n<p>I bang my head against the board until I'm satisfied that the story is right.</p>\r\n<p>This step may last a few weeks or a few months, depending how badly I have botched the original outline, or how tight the corner is that I have painted myself into.</p>\r\n<h2>Step 4. The \"First\" Draft (4-8 weeks)</h2>\r\n<p>Having revised my outline, I return to drafting. If necessary, I will perform some revision on existing scenes from the Half Draft, but more typically I will simply make notes about changes that need to be made and continue from where I left off, drafting the scenes in order until I complete the draft.</p>\r\n<p>I label this the First Draft, but note that by this point the story has been revised multiple times already. This is where many writers (pantsers) will be on a Third Draft or later.</p>\r\n<p>Finishing the draft takes 1-2 months.</p>\r\n<h2>Step 5. Have a Drink: The Fallow Period (2-8 weeks)</h2>\r\n<p>I have a special bottle of bourbon that I only open when I hit a writing milestone. Finishing a First Draft is one such milestone, so I pour one, make toast to my hard work, and enjoy the feeling of being done with something big.</p>\r\n<p>Then, I put the draft on the shelf for a while and think about something else.</p>\r\n<p>This step may last a couple of weeks, or a couple of months, depending what else I have going on, and how tired I am of looking at the pages!</p>\r\n<h2>Step 6: The Read Through (1 week)</h2>\r\n<p>Next, I pick up the draft again and simply read it through, from beginning to end. I make notes of any issues I find: plot holes, character inconsistencies, poorly worded passages, lame metaphors, etc. I explicitly do not attempt to fix any of these issues in this step, only identify them.</p>\r\n<p>When I say that I make notes, I'm talking specifically about Scrivener's \"comments\" feature that allows you to attach a comment to any arbitrary selection of text. Those comments become my To-Do list in the revision stage.</p>\r\n<p>I also leave comments when I'm drafting, because struggling to find the right word in the moment often becomes a form of resistance. Drafting notes I leave myself are things like [describe clothing] and [opposite of steep?].</p>\r\n<p>My books are not terribly long, to date, so the read through usually takes just a few days.</p>\r\n<h2>Step 7. The First Revision (1-4 weeks)</h2>\r\n<p>Next I work my way through the book, finding all the annotated passages (the Scrivener comments), and correcting the issues one at a time. I tend to write short in my first draft, so this almost always involves adding words to the draft, not trimming.</p>\r\n<p>Depending on how many problems I found, the first revision may take a week or up to a month.</p>\r\n<h2>Step 8. Other Eyes (2-4 weeks)</h2>\r\n<p>At this point I have made the project the best I can make it by myself. Time to ship it off to the editor and/or beta readers and see what they think.</p>\r\n<p>I will get back a list of notes and suggestions, which I review. I need to decide first, whether the issue is really a problem. Second, is it something that I believe I should fix? I'm unlikely to embark on a total rewrite or major plot change at this stage. Third, how should I fix it? I make more notes.</p>\r\n<h2>Step 9. The Final Revision. (1-4 weeks)</h2>\r\n<p>As in Step 7, I work through the notes one by one until they are all fixed.</p>\r\n<p>Again, the final revision may take a week or a month depending on the number of issues to be corrected.</p>\r\n<h2>Step 10. The Polish (1-2 weeks)</h2>\r\n<p>The Polish step is where the manuscript gets cleaned up and turned into a product. There are a few processes I go through to polish, all of them pretty simple.</p>\r\n<ul>\r\n<li>I have the computer read it to me. Running the full text through my Mac's text to speech engine, I hear things that I would not notice myself: strange inflections, odd word combinations, passages that could be misread, skipped words, doubled words. When reading by eye, you can skim right over these things, but the computer will read them exactly as they appear on the page, and errors will sound jarring.</li>\r\n<li>I read it aloud to myself. It's surprising how many copyediting issues can be discovered and resolved by reading the work aloud. I make lots of line revisions here. This is different from having the computer read to me. When the computer reads, it's about correctness. When I read myself, it's about refining the authorial voice.</li>\r\n<li>I run it through a grammar and style checker. I use&nbsp;<a href=\"https://prowritingaid.com/\">Pro Writing Aid</a>, but there are other similar tools. I use this to fix word choice issues, grammar, spelling, and punctuation.</li>\r\n<li>I export the text from&nbsp;<a href=\"https://www.literatureandlatte.com/scrivener/overview\">Scrivener</a>&nbsp;(where all my work has happened until now) to MS Word and run it through Word's spelling and grammar checker, just to be safe. Inevitably, there are some issues to be fixed.</li>\r\n<li>Formatting: I import the final MS Word file into&nbsp;<a href=\"https://vellum.pub/\">Vellum</a>&nbsp;to format the ebook and print version, add front matter and back matter, and finish the design.</li>\r\n</ul>\r\n<p>This step doesn't require much creative work, and it typically takes two weeks, but can be done in one week if I have enough free time.</p>\r\n<h2>Have Another Drink</h2>\r\n<p>At this point, the creative process is done, and the business process is just beginning. I have another drink of my special bourbon to celebrate a completed work, publish that puppy, and do whatever is next.</p>\r\n<p>That's the full skinny on my creative process, as of the beginning of 2019. As you can see, it has evolved a great deal over two years of steady writing. I know the process will continue to evolve as I level up and discover new refinements.</p>\r\n<p>I hope that some other writers find this helpful, and that curious readers now have a little better understanding of what goes into producing a novel. Let me know what you think!</p>",
+      "date_published": "2019-01-08T11:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 4,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.article",
+    "pk": 32,
+    "fields": {
+      "title": "Summoning Courage Is Available Today!",
+      "slug": "summoning-courage-is-available-today",
+      "status": "usable",
+      "site": 1,
+      "description": "",
+      "share_image": 8,
+      "base_template": "",
+      "content_template": "commoncontent/blocks/article_featuredimage.html",
+      "body": "<p>According to Hofstadter's Law, every project takes longer than you expect it to (even when you take into account Hofstadter's Law), and my latest book project is no exception. But, as of today,&nbsp;<a href=\"https://books2read.com/b/vv-summoning-courage\">Summoning Courage: The Piero Codex Book Three</a>&nbsp;is available at ebook retailers everywhere!</p>\r\n<p>I am delighted to announce the release of this conclusion to The Piero Codex trilogy. These were my first novels, and it has been an incredible learning experience for me to produce them. Those lessons learned will make my next series even better.</p>\r\n<p>Now that the edits are done and the cover is attached, I'm going to take a little break from writing to try to close out another very late project: the remodel of Albatross House. I'm going to stay focused on that project until it's done, so I probably will not be releasing another book in 2019. However, I have about 80 thousand words already banked for my next series; there will definitely be another release in the future!</p>\r\n<p>Thank you for following along with my creative journey. I sincerely hope you are enjoying it!</p>\r\n<p>Your author friend, Vince Veselosky</p>",
+      "date_published": "2019-04-30T10:00:00Z",
+      "date_modified": null,
+      "expires": null,
+      "_order": 1,
+      "seo_title": "",
+      "seo_description": "",
+      "custom_copyright_notice": "",
+      "custom_icon": "",
+      "locale": "en_US",
+
+      "section": 5,
+      "image_set": [],
+      "attachment_set": []
+    }
+  },
+  {
+    "model": "commoncontent.menu",
+    "pk": 1,
+    "fields": {
+      "site": 1,
+      "admin_name": "Main Nav",
+      "slug": "main-nav",
+      "title": ""
+    }
+  },
+  {
+    "model": "commoncontent.link",
+    "pk": 1,
+    "fields": {
+      "menu": 1,
+      "url": "/",
+      "title": "Home",
+      "custom_icon": "",
+      "description": "",
+      "share_image": null
+    }
+  },
+  {
+    "model": "commoncontent.link",
+    "pk": 2,
+    "fields": {
+      "menu": 1,
+      "url": "/seers-guild/",
+      "title": "Seers Guild",
+      "custom_icon": "",
+      "description": "",
+      "share_image": null
+    }
+  },
+  {
+    "model": "commoncontent.link",
+    "pk": 3,
+    "fields": {
+      "menu": 1,
+      "url": "/vip-list/",
+      "title": "VIP List",
+      "custom_icon": "",
+      "description": "",
+      "share_image": null
+    }
+  },
+  {
+    "model": "redirects.redirect",
+    "pk": 1,
+    "fields": {
+      "site": 1,
+      "old_path": "/seers-guild/",
+      "new_path": "https://books2read.com/rl/seers-guild"
+    }
+  },
+  {
+    "model": "redirects.redirect",
+    "pk": 2,
+    "fields": {
+      "site": 1,
+      "old_path": "/vip-list/",
+      "new_path": "https://www.subscribepage.com/veselosky-vip-list"
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+      "domain": "vince.veselosky.me",
+      "name": "Vince Veselosky"
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 2,
+    "fields": {
+      "domain": "www.mindvessel.com",
+      "name": "Mindvessel"
+    }
+  },
+  {
+    "model": "sites.site",
+    "pk": 3,
+    "fields": {
+      "domain": "www.iqlovecraft.com",
+      "name": "I.Q. Lovecraft"
+    }
+  }
+]

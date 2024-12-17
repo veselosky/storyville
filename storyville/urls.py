@@ -13,18 +13,33 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+from importlib.util import find_spec
+
+from commoncontent.sitemaps import sitemaps
+from commoncontent.views_optional import TinyMCEImageListView
 from django.conf import settings
 from django.contrib import admin
+from django.contrib.sitemaps.views import sitemap
 from django.urls import include, path
-from genericsite import views as generic
 
 urlpatterns = [
-    path("accounts/profile/", generic.ProfileView.as_view(), name="account_profile"),
     path("accounts/", include("django.contrib.auth.urls")),
     path("admin/doc/", include("django.contrib.admindocs.urls")),
     path("admin/", admin.site.urls),
+    path(
+        "images/recent.json",
+        TinyMCEImageListView.as_view(),
+        name="tinymce_image_list",
+    ),
     path("tinymce/", include("tinymce.urls")),
-    path("", include("genericsite.urls")),
+    path(
+        "sitemap.xml",
+        sitemap,
+        {"sitemaps": sitemaps},
+        name="django.contrib.sitemaps.views.sitemap",
+    ),
+    path("", include("commoncontent.urls")),
 ]
 
 if settings.DEBUG:
@@ -36,10 +51,7 @@ if settings.DEBUG:
     # urlpatterns += staticfiles_urlpatterns()  # automatic when DEBUG on
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-    try:
-        import debug_toolbar
-
+    # Add Django Debug Toolbar if installed
+    if find_spec("debug_toolbar"):
         # Catch-all patterns may block these if appended, hence insert
-        urlpatterns.insert(0, path("__debug__/", include(debug_toolbar.urls)))
-    except ImportError:
-        pass
+        urlpatterns.insert(0, path("__debug__/", include("debug_toolbar.urls")))

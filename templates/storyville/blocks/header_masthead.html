@@ -1,0 +1,27 @@
+<div class="masthead p-3"
+     data-bs-theme="{{ header_color_scheme|default:'dark' }}">
+  {% load commoncontent i18n %}
+  <h1 class="brand">
+    <a href="/">{% firstof brand request.site.name %}</a>
+  </h1>
+  {% if tagline %}<p class="h4">{{ tagline }}</p>{% endif %}
+  {% menu "main-nav" as menu %}
+  <nav>
+    <ul class="nav nav-underline justify-content-end">
+      {% for item in menu.links %}
+        {% firstof item.get_absolute_url item.url as url %}
+        <li class="nav-item">
+          <a href="{{ url }}"
+             class="nav-link {% menu_active url %}"
+             {% menu_aria_current url %}>
+            {% if url == "/" %}
+              {% trans "Home" %}
+            {% else %}
+              {% firstof item.title item.opengraph.title %}
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
