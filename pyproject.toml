@@ -28,12 +28,12 @@ dependencies = [
 ]
 
 # TODO Get setuptools build working
-# [build-system]
+[build-system]
 # With setuptools-scm, package data files (e.g. templates) that are tracked by git will
 # be automatically detected and included. Without setuptools-scm, you would need to
 # specify a file pattern in MANIFEST.in to collect them.
-# requires = ["setuptools>=66.1.1", "setuptools-scm>=7.0.5", "wheel"]
-# build-backend = "setuptools.build_meta"
+requires = ["setuptools>=66.1.1", "setuptools-scm>=7.0.5", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [tool.setuptools.dynamic.version]
 attr = "storyville.__version__"

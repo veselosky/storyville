@@ -71,7 +71,7 @@ MIDDLEWARE = [
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],
+        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -105,7 +105,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Get environment settings
 env = environ.Env()
-DOTENV = BASE_DIR / ".env"
+# Switched to src layout, so .env is now in the parent directory
+DOTENV = BASE_DIR.parent / ".env"
 if DOTENV.exists() and not env("IGNORE_ENV_FILE", default=False):
     environ.Env.read_env(DOTENV)
 
@@ -124,13 +125,13 @@ ALLOWED_HOSTS = env("ALLOWED_HOSTS", default=[])
 DATA_DIR = Path(env("DATA_DIR", default=BASE_DIR.joinpath("var")))
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
+# https://docs.djangoproject.com/en/4.2/howto/static-files/
 STATIC_URL = "/static/"
-STATIC_ROOT = DATA_DIR / "static"
+STATIC_ROOT = DATA_DIR / "www" / "static"
 STATIC_ROOT.mkdir(parents=True, exist_ok=True)
-STATICFILES_DIRS = [BASE_DIR / "static"]
+# STATICFILES_DIRS = [BASE_DIR / "static"]
 MEDIA_URL = "/media/"
-MEDIA_ROOT = DATA_DIR / "media"
+MEDIA_ROOT = DATA_DIR / "www" / "media"
 MEDIA_ROOT.mkdir(parents=True, exist_ok=True)
 
 # ManifestStaticFilesStorage is recommended in production, to prevent outdated
