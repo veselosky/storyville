@@ -1,0 +1,29 @@
+# An example Caddyfile for serving the Django site (locally)
+
+# Specifying port 80 (or using the http:// prefix) tells Caddy not to bother with SSL
+# certs from Let's Encrypt. This is better for local development. In production, use
+# the actual domain name without a port number to get automatic SSL certs.
+localhost:80 {
+    root * /var/www  # Set working dir to /var/www for this site
+
+    # Enable logging. Access logs go to stderr by default. This is what you want for
+    # contanerized applications, as logs are automatically collected by Docker/k8s.
+    log
+
+    # Creates a matcher that matches any file that exists in the root.
+    @static file
+    # Serve files from the root directory if the request matches the @static matcher
+    # (that is, if they exist).
+    # Handle blocks are mutually exclusive, so the first one to match will be used, and
+    # the rest will be ignored.
+    handle @static {
+        file_server
+    }
+
+    # The handle block without a matcher is the fallback. It will match any request that
+    # is not handled by previous handle blocks. Here, we reverse proxy to the Django app
+    # by default.
+    handle {
+        reverse_proxy http://storyville:8000
+    }
+}
