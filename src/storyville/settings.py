@@ -115,7 +115,11 @@ if DOTENV.exists() and not env("IGNORE_ENV_FILE", default=False):
 # insecure configuration in production.
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG", default=False)
-ALLOWED_HOSTS = env("ALLOWED_HOSTS", default=[])
+ALLOWED_HOSTS = env("ALLOWED_HOSTS", default=["localhost"])
+# If a site id is provided in the environment, use it. Otherwise, let Django
+# look it up via the host header.
+if site_id := env("SITE_ID", default=None, cast=int):
+    SITE_ID = site_id
 
 # Local data written by the app should be kept in one directory for ease of backup.
 # In DEV this can be a subdir of BASE_DIR. In production, for single-server setups
@@ -225,17 +229,12 @@ TINYMCE_DEFAULT_CONFIG = commoncontent.apps.TINYMCE_CONFIG
 # SECTION 3: DEVELOPMENT: If running in a dev environment, loosen restrictions
 # and add debugging tools.
 #######################################################################################
-SITE_ID = env("SITE_ID", default=None, cast=int)
 
 # Rich test output
 TEST_RUNNER = "django_rich.test.RichRunner"
 
 if DEBUG:
     ALLOWED_HOSTS = ["*"]
-    # So you don't have to add localhost and/or 127.0.0.1 to your Sites table:
-    # But note: if your Django project only serves one site, you can set this outside
-    # the DEBUG section. See README for details.
-    # SITE_ID = 1
 
     if find_spec("debug_toolbar"):
         # Debug toolbar is optional
