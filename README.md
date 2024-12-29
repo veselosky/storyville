@@ -1,23 +1,6 @@
 # Storyville: Vince's little corner of the web
 
-This Django project houses my actively maintained websites, and custom web-based tools I
-use.
-
-## Self-hosted Branch
-
-- [x] Export data from prod
-- [x] Switch to pyproject.toml and uv for dependency management
-- [x] Upgrade code to latest commoncontent and sitevars
-- [x] Modify data export to fit new data model
-- [x] Re-import data
-- [x] Add smoke tests
-- [x] Add pre-commit
-- [x] Revert to stock manage.py
-- [x] Switch to src layout and enable build backend in pyproject.toml
-- [x] Add Dockerfile
-- [x] Document ENV vars used by docker image
-- [ ] Automate building container image on release
-- [x] Update README
+This Django project houses my actively maintained websites.
 
 ## Environment: Local vs Docker
 
@@ -43,3 +26,5 @@ When running in a Docker container, several environment variables MUST be provid
 - SITE_ID - Not required for production (assuming DNS is correct), but needed for local
   dev.
 - CACHE_URL - Using the example compose file, set to `redis://redis:6379/0`
+
+TODO: Automate building container image on release
