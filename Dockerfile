@@ -45,6 +45,9 @@ ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 DJANGO_SETTINGS_MODULE=storyvil
 # Switch to the app user
 USER app
 
+# Add metadata
+LABEL org.opencontainers.image.source=https://github.com/veselosky/storyville
+
 # Use Granian to run the application
 EXPOSE 8000
 CMD ["granian", "--interface", "wsgi", "--workers", "4", "--host", "0.0.0.0", "storyville.wsgi:application"]
