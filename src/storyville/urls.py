@@ -14,8 +14,6 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from importlib.util import find_spec
-
 from commoncontent.sitemaps import sitemaps
 from commoncontent.views_optional import TinyMCEImageListView
 from django.conf import settings
@@ -52,6 +50,6 @@ if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
     # Add Django Debug Toolbar if installed
-    if find_spec("debug_toolbar"):
+    if "debug_toolbar" in settings.INSTALLED_APPS:
         # Catch-all patterns may block these if appended, hence insert
         urlpatterns.insert(0, path("__debug__/", include("debug_toolbar.urls")))
