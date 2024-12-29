@@ -2,6 +2,10 @@
 "Smoke" tests to ensure that views load and templates render.
 """
 
+from pathlib import Path
+from unittest import skipIf
+
+from django.conf import settings
 from django.test import TestCase, override_settings
 from django.urls import reverse
 
@@ -30,6 +34,10 @@ class SmokeTests(TestCase):
         response = self.client.get(reverse("site_feed"))
         self.assertEqual(response.status_code, 200)
 
+    @skipIf(
+        not Path(settings.MEDIA_ROOT / "cover-PC3-SummoningCourage.jpg").exists(),
+        "No media files to test",
+    )
     def test_tinymce_image_list(self):
         response = self.client.get(reverse("tinymce_image_list"))
         self.assertEqual(response.status_code, 200)
