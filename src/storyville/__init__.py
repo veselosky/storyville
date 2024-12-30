@@ -7,3 +7,5 @@ try:
 except ImportError:
     # Ignore if you have not installed celery
     pass
+
+__version__ = "0.1.0"

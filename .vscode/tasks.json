@@ -20,6 +20,26 @@
         "cwd": "${workspaceFolder}"
       },
       "problemMatcher": []
+    },
+    {
+      "type": "docker-build",
+      "label": "docker-build",
+      "platform": "python",
+      "dockerBuild": {
+        "tag": "storyville:latest",
+        "dockerfile": "${workspaceFolder}/Dockerfile",
+        "context": "${workspaceFolder}",
+        "pull": true
+      }
+    },
+    {
+      "type": "docker-run",
+      "label": "docker-run: debug",
+      "dependsOn": ["docker-build"],
+      "python": {
+        "args": ["runserver", "0.0.0.0:8000", "--nothreading", "--noreload"],
+        "file": "manage.py"
+      }
     }
   ]
 }

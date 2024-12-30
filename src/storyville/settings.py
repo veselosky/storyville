@@ -11,10 +11,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 See also https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 """
+
+from importlib.util import find_spec
 from pathlib import Path
 
+import commoncontent.apps
 import environ
-import genericsite.apps
 
 PROJECT = __name__.split(".")[0]
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,10 +29,29 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 WSGI_APPLICATION = f"{PROJECT}.wsgi.application"
 ROOT_URLCONF = f"{PROJECT}.urls"
 
-INSTALLED_APPS = genericsite.apps.plus(
-    # Third party apps:
+INSTALLED_APPS = [
+    "storyville",  # app for project-specific stuff
+    # commoncontent apps for static site generation
+    *commoncontent.apps.CONTENT,
+    # commoncontent apps for publishing tools
     "django_extensions",
-)
+    "tinymce",
+    # contrib apps required by commoncontent for statics
+    "django.contrib.contenttypes",
+    "django.contrib.humanize",
+    "django.contrib.redirects",
+    "django.contrib.sitemaps",
+    "django.contrib.sites",
+    "django.contrib.staticfiles",
+    # contrib apps required by commoncontent for dynamically served apps
+    "django.contrib.auth",
+    "django.contrib.messages",
+    "django.contrib.sessions",
+    # Optional admin with commoncontent extensions
+    "django.contrib.admin",
+    "django.contrib.admindocs",
+    "sitevars",
+]
 
 MIDDLEWARE = [
     # https://docs.djangoproject.com/en/4.2/ref/middleware/#django.middleware.security.SecurityMiddleware
@@ -44,13 +65,13 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     # Set request.site by checking for a Site where domain is the host header
     "django.contrib.sites.middleware.CurrentSiteMiddleware",
-    "genericsite.redirects.TemporaryRedirectFallbackMiddleware",
+    "commoncontent.redirects.TemporaryRedirectFallbackMiddleware",
 ]
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],
+        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -60,7 +81,8 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 "django.template.context_processors.media",
                 "django.template.context_processors.static",
-                "genericsite.apps.context_defaults",
+                "commoncontent.apps.context_defaults",
+                "sitevars.context_processors.inject_sitevars",
             ],
         },
     },
@@ -71,7 +93,6 @@ TEMPLATES = [
 LANGUAGE_CODE = "en-US"
 TIME_ZONE = "America/New_York"
 USE_I18N = True
-USE_L10N = True
 USE_TZ = True
 
 # Default primary key field type
@@ -84,7 +105,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Get environment settings
 env = environ.Env()
-DOTENV = BASE_DIR / ".env"
+# Switched to src layout, so .env is now in the parent directory
+DOTENV = BASE_DIR.parent / ".env"
 if DOTENV.exists() and not env("IGNORE_ENV_FILE", default=False):
     environ.Env.read_env(DOTENV)
 
@@ -93,7 +115,11 @@ if DOTENV.exists() and not env("IGNORE_ENV_FILE", default=False):
 # insecure configuration in production.
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG", default=False)
-ALLOWED_HOSTS = env("ALLOWED_HOSTS", default=[])
+ALLOWED_HOSTS = env("ALLOWED_HOSTS", default=["localhost"])
+# If a site id is provided in the environment, use it. Otherwise, let Django
+# look it up via the host header.
+if site_id := env("SITE_ID", default=None, cast=int):
+    SITE_ID = site_id
 
 # Local data written by the app should be kept in one directory for ease of backup.
 # In DEV this can be a subdir of BASE_DIR. In production, for single-server setups
@@ -103,13 +129,13 @@ ALLOWED_HOSTS = env("ALLOWED_HOSTS", default=[])
 DATA_DIR = Path(env("DATA_DIR", default=BASE_DIR.joinpath("var")))
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
+# https://docs.djangoproject.com/en/4.2/howto/static-files/
 STATIC_URL = "/static/"
-STATIC_ROOT = DATA_DIR / "static"
+STATIC_ROOT = DATA_DIR / "www" / "static"
 STATIC_ROOT.mkdir(parents=True, exist_ok=True)
-STATICFILES_DIRS = [BASE_DIR / "static"]
+# STATICFILES_DIRS = [BASE_DIR / "static"]
 MEDIA_URL = "/media/"
-MEDIA_ROOT = DATA_DIR / "media"
+MEDIA_ROOT = DATA_DIR / "www" / "media"
 MEDIA_ROOT.mkdir(parents=True, exist_ok=True)
 
 # ManifestStaticFilesStorage is recommended in production, to prevent outdated
@@ -145,24 +171,21 @@ CACHES = {"default": env.cache("CACHE_URL", default="locmemcache://")}
 EMAIL_CONFIG = env.email_url("EMAIL_URL", default="consolemail://")
 vars().update(EMAIL_CONFIG)
 
+if find_spec("celery"):
+    # CELERY settings
+    # If the environment has not provided settings, assume there is no broker
+    # and run celery tasks in-process. This means you MUST provide
+    # CELERY_TASK_ALWAYS_EAGER=False in your environment to actually use celery.
+    CELERY_TASK_ALWAYS_EAGER = env("CELERY_TASK_ALWAYS_EAGER", default=True)
+    CELERY_TASK_EAGER_PROPAGATES = env("CELERY_TASK_EAGER_PROPAGATES", default=True)
+    # For development setup, assume default of local redis.
+    CELERY_BROKER_URL = env("CELERY_BROKER_URL", default="redis://localhost:6379/1")
+    CELERY_RESULT_BACKEND = env("CELERY_RESULT_BACKEND", default="")
+    CELERY_TIME_ZONE = TIME_ZONE
 
-# CELERY settings
-# If the environment has not provided settings, assume there is no broker
-# and run celery tasks in-process. This means you MUST provide
-# CELERY_TASK_ALWAYS_EAGER=False in your environment to actually use celery.
-CELERY_TASK_ALWAYS_EAGER = env("CELERY_TASK_ALWAYS_EAGER", default=True)
-CELERY_TASK_EAGER_PROPAGATES = env("CELERY_TASK_EAGER_PROPAGATES", default=True)
-# For development setup, assume default of local redis.
-CELERY_BROKER_URL = env("CELERY_BROKER_URL", default="redis://localhost:6379/1")
-CELERY_RESULT_BACKEND = env("CELERY_RESULT_BACKEND", default="")
-CELERY_TIME_ZONE = TIME_ZONE
-try:
-    import django_celery_beat
-
+if find_spec("django_celery_beat"):
     CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
     INSTALLED_APPS.append("django_celery_beat")
-except ImportError:
-    pass
 
 
 # Use rich logging for pretty console logs
@@ -200,37 +223,24 @@ if LOG_FILE:
 # SECTION 2: App configuration.
 #######################################################################################
 
-THUMBNAIL_PROCESSORS = genericsite.apps.THUMBNAIL_PROCESSORS
-THUMBNAIL_WIDGET_OPTIONS = genericsite.apps.THUMBNAIL_WIDGET_OPTIONS
-THUMBNAIL_DEBUG = DEBUG
-
-TINYMCE_DEFAULT_CONFIG = genericsite.apps.TINYMCE_CONFIG
+TINYMCE_DEFAULT_CONFIG = commoncontent.apps.TINYMCE_CONFIG
 
 #######################################################################################
 # SECTION 3: DEVELOPMENT: If running in a dev environment, loosen restrictions
 # and add debugging tools.
 #######################################################################################
-SITE_ID = env("SITE_ID", default=None, cast=int)
 
 # Rich test output
 TEST_RUNNER = "django_rich.test.RichRunner"
 
 if DEBUG:
     ALLOWED_HOSTS = ["*"]
-    # So you don't have to add localhost and/or 127.0.0.1 to your Sites table:
-    # But note: if your Django project only serves one site, you can set this outside
-    # the DEBUG section. See README for details.
-    # SITE_ID = 1
 
-    try:
-        import debug_toolbar
-
+    if find_spec("debug_toolbar"):
+        # Debug toolbar is optional
         INSTALLED_APPS.append("debug_toolbar")
         MIDDLEWARE.append("debug_toolbar.middleware.DebugToolbarMiddleware")
         INTERNAL_IPS = [
             "127.0.0.1",
         ]
         # See also urls.py for debug_toolbar urls
-    except ImportError:
-        # Dev tools are optional
-        pass

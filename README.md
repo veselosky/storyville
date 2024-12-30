@@ -1,25 +1,30 @@
 # Storyville: Vince's little corner of the web
 
-This Django project houses my actively maintained websites, and custom web-based tools I
-use.
+This Django project houses my actively maintained websites.
 
-## Dependency Management
+## Environment: Local vs Docker
 
-This project includes [pip-tools](https://pypi.org/project/pip-tools/) for dependency
-management. There are two requirements files: `requirements.in` provides the acceptable
-ranges of packages to install in a production environment (or any other environment);
-`requirements-dev.in` provides packages to install in development environments. Both of
-these have corresponding "pin" files: `requirements.txt` and `requirements-dev.txt`.
+Default values in the project's `settings.py` are suitable for running inside a Docker
+container. For developing locally (running the app on local host and not in a Docker
+container) copy the `example.env` file to `.env` within the project base directory and
+adjust variables accordingly.
 
-To add a new dependency, add it to the correct `.in` file, and then run
-`manage.py pipsync` to regenerate the pin files and synchronize your current virtual
-environment with the new pin files.
+To simplify both development and production, data files that need backing up are stored
+together under a single directory, designated by the `DATA_DIR` environment variable.
+The SQLite database files are stored under `$DATA_DIR/db/`. STATIC_ROOT and MEDIA_ROOT
+are subdirectories stored under `$DATA_DIR/www`.
 
-Any arguments passed to `manage.py pipsync` will be passed through to the underlying
-`pip-compile` command. For example, to bump to the latest Django patch release use
-`manage.py pipsync --upgrade-package django`. See the
-[pip-tools docs](https://pypi.org/project/pip-tools/) for complete details.
+In the Docker container, `DATA_DIR` has the default value of `/app/var/`. To run under
+Docker, provide two volumes or bind mounts, one for `/app/var/db/`, and a second for
+`/app/var/www/`. The www volume/mount must be shared with your web server to serve
+static files and media.
 
-The pin files are not included in the template repository, but will be generated when
-you run `manage.py devsetup`. This ensures you will get the latest version of Django and
-related packages when starting a new project.
+When running in a Docker container, several environment variables MUST be provided:
+
+- SECRET_KEY - App will not run without it.
+- ALLOWED_HOSTS - For dev, set to "\*". For production, the sites you will serve.
+- SITE_ID - Not required for production (assuming DNS is correct), but needed for local
+  dev.
+- CACHE_URL - Using the example compose file, set to `redis://redis:6379/0`
+
+TODO: Automate building container image on release
